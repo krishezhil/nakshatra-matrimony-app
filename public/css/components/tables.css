@@ -1,0 +1,174 @@
+/* Tables and Results Components Styles */
+
+/* Results Table Styling */
+.table {
+    margin-bottom: 0;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.table thead th {
+    background: linear-gradient(45deg, var(--brand-maroon), var(--brand-dark-maroon)) !important;
+    color: var(--brand-gold) !important;
+    border: none;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
+    padding: 15px 12px;
+    font-size: 0.9rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.table thead th:first-child {
+    border-top-left-radius: 10px;
+}
+
+.table thead th:last-child {
+    border-top-right-radius: 10px;
+}
+
+.table tbody tr {
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.table tbody tr:hover {
+    background: rgba(255, 215, 0, 0.15) !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.table tbody td {
+    vertical-align: middle;
+    padding: 12px;
+    border-color: rgba(255, 215, 0, 0.2);
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+.table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+/* Table Container */
+.table-responsive {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(255, 215, 0, 0.2);
+}
+
+/* Enhanced Table Scrollbar */
+.table-responsive::-webkit-scrollbar {
+    height: 8px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    background: rgba(255, 215, 0, 0.1);
+    border-radius: 10px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background: rgba(255, 215, 0, 0.5);
+    border-radius: 10px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 215, 0, 0.7);
+}
+
+/* Enhanced Table Scrollbar */
+.table-responsive::-webkit-scrollbar {
+    height: 8px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    background: rgba(255, 215, 0, 0.1);
+    border-radius: 10px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background: rgba(255, 215, 0, 0.5);
+    border-radius: 10px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 215, 0, 0.7);
+}
+
+/* Badge Enhancements */
+.badge {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.badge.bg-primary {
+    background: linear-gradient(45deg, #007bff, #0056b3) !important;
+    border: 1px solid #0056b3;
+}
+
+.badge.bg-info {
+    background: linear-gradient(45deg, #17a2b8, #138496) !important;
+    border: 1px solid #138496;
+}
+
+.badge.bg-success {
+    background: linear-gradient(45deg, #28a745, #1e7e34) !important;
+    border: 1px solid #1e7e34;
+}
+
+.badge.bg-warning {
+    background: linear-gradient(45deg, #ffc107, #e0a800) !important;
+    color: #212529 !important;
+    border: 1px solid #e0a800;
+}
+
+.badge.bg-secondary {
+    background: linear-gradient(45deg, #6c757d, #545b62) !important;
+    border: 1px solid #545b62;
+}
+
+/* Results Section Header */
+.section-title i.fa-users {
+    background: linear-gradient(45deg, var(--brand-gold), var(--brand-light-gold));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 1.4rem;
+}
+
+/* Porutham Special Styling */
+.badge:has(.fa-heart),
+.badge.bg-success:contains("▲") {
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24) !important;
+    color: white !important;
+    animation: heartbeat 2s ease-in-out infinite;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .table thead th,
+    .table tbody td {
+        padding: 8px 6px;
+        font-size: 0.8rem;
+    }
+
+    .badge {
+        font-size: 0.7rem;
+        padding: 4px 8px;
+    }
+}

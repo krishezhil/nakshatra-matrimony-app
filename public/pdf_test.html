@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF Download Test</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div style="padding: 20px;">
+        <h1>PDF Download Test</h1>
+        <p>This page tests the PDF download functionality specifically.</p>
+        
+        <div style="margin: 20px 0;">
+            <button onclick="testPDFDownload()" style="padding: 10px 20px; font-size: 16px; background: #007bff; color: white; border: none; border-radius: 5px;">
+                Test PDF Download
+            </button>
+        </div>
+        
+        <div style="margin: 20px 0;">
+            <button onclick="testDirectFormSubmission()" style="padding: 10px 20px; font-size: 16px; background: #28a745; color: white; border: none; border-radius: 5px;">
+                Test Direct Form Submission
+            </button>
+        </div>
+        
+        <div id="status" style="margin: 20px 0; padding: 10px; background: #f8f9fa; border-radius: 5px;"></div>
+    </div>
+    
+    <script>
+        function updateStatus(message) {
+            document.getElementById('status').innerHTML = message;
+            console.log(message);
+        }
+        
+        function testPDFDownload() {
+            updateStatus('🔄 Testing PDF download...');
+            
+            // Test data similar to what the real app uses
+            const testProfiles = [{
+                name: "Test User",
+                gender: "Male", 
+                age: 25,
+                qualification: "B.Tech",
+                nakshatraid: 1,
+                monthly_income: 50000,
+                birth_date: "1999-01-01",
+                birth_place: "Chennai",
+                job_details: "Software Engineer",
+                rasi_lagnam: "Mesham",
+                gothram: "Bharadwaj",
+                contact_no: "9876543210",
+                address: "Test Address",
+                father_name: "Test Father",
+                mother_name: "Test Mother",
+                siblings: "1",
+                region: "Chennai",
+                is_remarried: "No"
+            }];
+            
+            const seekerInfo = {
+                name: "Test Browser User",
+                serialNo: "BROWSER001"
+            };
+            
+            // Try using fetch first (JSON method)
+            fetch('/export/matching-profiles', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    profiles: testProfiles,
+                    format: 'pdf',
+                    seekerInfo: seekerInfo
+                })
+            })
+            .then(response => {
+                updateStatus(`📡 Response received: ${response.status} ${response.statusText}`);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                const contentType = response.headers.get('content-type');
+                const disposition = response.headers.get('content-disposition');
+                updateStatus(`📄 Content-Type: ${contentType}<br>📋 Disposition: ${disposition}`);
+                
+                return response.blob();
+            })
+            .then(blob => {
+                updateStatus(`✅ PDF blob received: ${blob.size} bytes`);
+                
+                // Create download link
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'test_browser_pdf.pdf';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                window.URL.revokeObjectURL(url);
+                
+                updateStatus(`✅ PDF download initiated: ${blob.size} bytes`);
+            })
+            .catch(error => {
+                updateStatus(`❌ Error: ${error.message}`);
+                console.error('PDF download error:', error);
+            });
+        }
+        
+        function testDirectFormSubmission() {
+            updateStatus('🔄 Testing direct form submission...');
+            
+            const testProfiles = [{
+                name: "Form Test User",
+                gender: "Female",
+                age: 24,
+                qualification: "MBA",
+                nakshatraid: 2,
+                monthly_income: 75000
+            }];
+            
+            const seekerInfo = {
+                name: "Form Test User", 
+                serialNo: "FORM001"
+            };
+            
+            // Create form (traditional method)
+            const form = document.createElement('form');
+            form.method = 'POST';
+            form.action = '/export/matching-profiles';
+            form.style.display = 'none';
+            
+            // Add profiles
+            const profilesInput = document.createElement('input');
+            profilesInput.type = 'hidden';
+            profilesInput.name = 'profiles';
+            profilesInput.value = JSON.stringify(testProfiles);
+            form.appendChild(profilesInput);
+            
+            // Add seeker info
+            const seekerInput = document.createElement('input');
+            seekerInput.type = 'hidden';
+            seekerInput.name = 'seekerInfo';
+            seekerInput.value = JSON.stringify(seekerInfo);
+            form.appendChild(seekerInput);
+            
+            // Add format
+            const formatInput = document.createElement('input');
+            formatInput.type = 'hidden';
+            formatInput.name = 'format';
+            formatInput.value = 'pdf';
+            form.appendChild(formatInput);
+            
+            document.body.appendChild(form);
+            form.submit();
+            document.body.removeChild(form);
+            
+            updateStatus('✅ Form submitted for PDF download');
+        }
+    </script>
+</body>
+</html>

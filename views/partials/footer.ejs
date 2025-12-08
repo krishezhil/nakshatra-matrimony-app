@@ -1,0 +1,506 @@
+<footer class="enhanced-footer mt-auto fixed-bottom" style="z-index: 1040;">
+  <div class="footer-content">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <!-- Copyright and Tagline -->
+        <div class="col-12 text-center">
+          <div class="footer-copyright">
+            <div class="copyright-text">&copy; 2025 கந்த கோட்டம் சேவா சங்கம்</div>
+            <div class="footer-tagline">திருமண இணையதளம்</div>
+            <!-- Version Badge -->
+            <div class="version-badge-container mt-2">
+              <button class="version-badge" data-bs-toggle="modal" data-bs-target="#versionModal" title="Click to view app information">
+                <i class="fas fa-info-circle me-1"></i>v<%= typeof appVersion !== 'undefined' ? appVersion : '1.0.0' %>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Decorative Elements -->
+  <div class="footer-decoration">
+    <div class="decoration-symbol" style="left: 5%;">🪔</div>
+    <div class="decoration-symbol" style="right: 5%;">🪔</div>
+  </div>
+</footer>
+
+<!-- Version Information Modal -->
+<div class="modal fade" id="versionModal" tabindex="-1" aria-labelledby="versionModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content version-modal-content">
+      <div class="modal-header version-modal-header">
+        <h5 class="modal-title" id="versionModalLabel">
+          <i class="fas fa-info-circle me-2"></i>Application Information
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body version-modal-body">
+        <div class="version-info-section">
+          <div class="version-header">
+            <i class="fas fa-code-branch version-icon"></i>
+            <h3 class="app-title">கந்த கோட்டம் சேவா சங்கம்</h3>
+            <p class="app-subtitle">Nakshatra Matching Matrimony Platform</p>
+          </div>
+          
+          <div class="version-details">
+            <div class="detail-row">
+              <span class="detail-label"><i class="fas fa-tag me-2"></i>Version:</span>
+              <span class="detail-value"><%= typeof appVersion !== 'undefined' ? appVersion : '1.0.0' %></span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label"><i class="fas fa-calendar-alt me-2"></i>Release Date:</span>
+              <span class="detail-value"><%= typeof releaseDate !== 'undefined' ? releaseDate : 'October 2025' %></span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label"><i class="fas fa-code me-2"></i>Build:</span>
+              <span class="detail-value"><%= typeof buildNumber !== 'undefined' ? buildNumber : 'Production' %></span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label"><i class="fab fa-node-js me-2"></i>Node.js:</span>
+              <span class="detail-value"><%= typeof nodeVersion !== 'undefined' ? nodeVersion : process.version %></span>
+            </div>
+          </div>
+          
+          <div class="features-section">
+            <h6 class="features-title"><i class="fas fa-star me-2"></i>Key Features</h6>
+            <ul class="features-list">
+              <li><i class="fas fa-check-circle me-2"></i>Vedic Nakshatra Compatibility Matching</li>
+              <li><i class="fas fa-check-circle me-2"></i>Porutham Calculation System</li>
+              <li><i class="fas fa-check-circle me-2"></i>Advanced Profile Filtering</li>
+              <li><i class="fas fa-check-circle me-2"></i>PDF & Excel Export</li>
+              <li><i class="fas fa-check-circle me-2"></i>WhatsApp Integration</li>
+            </ul>
+          </div>
+          
+          <div class="credits-section">
+            <p class="credits-text">
+              <i class="fas fa-heart me-1 text-danger"></i>
+              Built with dedication for the community
+            </p>
+            <p class="tagline">தன்னலற்ற சேவையே உயர்வு</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer version-modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          <i class="fas fa-times me-2"></i>Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Error Handling Scripts -->
+<script src="/js/errorHandler.js"></script>
+<script src="/js/profileErrorHandler.js"></script>
+
+<style>
+.enhanced-footer {
+  background: linear-gradient(135deg, #800020 0%, #660019 50%, #800020 100%);
+  border-top: 3px solid #FFD700;
+  box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1040;
+  overflow: hidden;
+}
+
+.footer-content {
+  padding: 10px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: start;
+}
+
+.footer-logo {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid #FFD700;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+  filter: brightness(1.1);
+}
+
+.footer-org-name {
+  font-family: 'Noto Sans Tamil', sans-serif;
+  color: #FFD700;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.footer-copyright {
+  color: #FFD700;
+}
+
+.copyright-text {
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.footer-tagline {
+  font-family: 'Noto Sans Tamil', sans-serif;
+  font-size: 0.85rem;
+  color: #FFFACD;
+  font-style: italic;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  align-items: end;
+}
+
+.footer-link {
+  color: #FFD700;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.footer-link:hover {
+  color: #FFFF00;
+  transform: translateY(-1px);
+  text-shadow: 0 0 8px rgba(255, 255, 0, 0.5);
+  text-decoration: none;
+}
+
+.footer-link i {
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+.footer-decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.decoration-symbol {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.5rem;
+  color: rgba(255, 215, 0, 0.1);
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(-50%) rotate(0deg);
+    opacity: 0.1;
+  }
+  50% {
+    transform: translateY(-60%) rotate(5deg);
+    opacity: 0.2;
+  }
+}
+
+/* Background pattern */
+.enhanced-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 20% 80%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 215, 0, 0.1) 0%, transparent 50%);
+  z-index: 1;
+}
+
+/* Ensure content doesn't get hidden behind fixed footer */
+body {
+  padding-bottom: 80px;
+}
+
+/* Version Badge Styles */
+.version-badge-container {
+  display: inline-block;
+}
+
+.version-badge {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.3), rgba(255, 215, 0, 0.2));
+  border: 1px solid rgba(255, 215, 0, 0.5);
+  color: #FFD700;
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.version-badge:hover {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.5), rgba(255, 215, 0, 0.4));
+  border-color: #FFD700;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(255, 215, 0, 0.3);
+  color: #FFFF00;
+}
+
+.version-badge i {
+  opacity: 0.8;
+}
+
+/* Version Modal Styles */
+.version-modal-content {
+  background: linear-gradient(135deg, #2c003e 0%, #1a1a2e 50%, #16213e 100%);
+  border: 2px solid #FFD700;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.version-modal-header {
+  background: linear-gradient(135deg, #800020, #660019);
+  color: #FFD700;
+  border-bottom: 2px solid #FFD700;
+  border-radius: 13px 13px 0 0;
+}
+
+.version-modal-header .modal-title {
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.version-modal-body {
+  padding: 30px;
+  color: #FFFFFF;
+}
+
+.version-info-section {
+  text-align: center;
+}
+
+.version-header {
+  margin-bottom: 30px;
+}
+
+.version-icon {
+  font-size: 3rem;
+  color: #FFD700;
+  margin-bottom: 15px;
+  animation: pulse 2s infinite;
+}
+
+.app-title {
+  font-family: 'Noto Sans Tamil', sans-serif;
+  color: #FFD700;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.app-subtitle {
+  color: #FFFACD;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.version-details {
+  background: rgba(255, 215, 0, 0.1);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.detail-label {
+  color: #FFD700;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.detail-value {
+  color: #FFFFFF;
+  font-weight: 500;
+  background: rgba(255, 215, 0, 0.2);
+  padding: 3px 12px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+}
+
+.features-section {
+  text-align: left;
+  margin-bottom: 25px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.features-title {
+  color: #FFD700;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features-list li {
+  padding: 8px 0;
+  color: #FFFACD;
+  font-size: 0.95rem;
+}
+
+.features-list li i {
+  color: #28a745;
+}
+
+.credits-section {
+  border-top: 1px solid rgba(255, 215, 0, 0.3);
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.credits-text {
+  color: #FFFACD;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-family: 'Noto Sans Tamil', sans-serif;
+  color: #FFD700;
+  font-style: italic;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.version-modal-footer {
+  background: rgba(255, 215, 0, 0.1);
+  border-top: 1px solid rgba(255, 215, 0, 0.3);
+  border-radius: 0 0 13px 13px;
+}
+
+.version-modal-footer .btn-secondary {
+  background: linear-gradient(135deg, #800020, #660019);
+  border: 1px solid #FFD700;
+  color: #FFD700;
+  font-weight: 600;
+}
+
+.version-modal-footer .btn-secondary:hover {
+  background: linear-gradient(135deg, #660019, #800020);
+  border-color: #FFFF00;
+  color: #FFFF00;
+  box-shadow: 0 4px 8px rgba(255, 215, 0, 0.3);
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 70px;
+  }
+  
+  .footer-brand {
+    justify-content: center;
+  }
+  
+  .footer-links {
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .footer-logo {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .footer-org-name {
+    font-size: 1rem;
+  }
+  
+  .copyright-text {
+    font-size: 0.85rem;
+  }
+  
+  .footer-tagline {
+    font-size: 0.8rem;
+  }
+  
+  .footer-link {
+    font-size: 0.85rem;
+  }
+  
+  .decoration-symbol {
+    font-size: 2rem;
+  }
+  
+  .version-badge {
+    font-size: 0.7rem;
+    padding: 3px 10px;
+  }
+  
+  .version-modal-body {
+    padding: 20px;
+  }
+  
+  .app-title {
+    font-size: 1.5rem;
+  }
+  
+  .detail-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}
+</style>

@@ -1,0 +1,143 @@
+/* Find Matching Page - Main Styles */
+
+:root {
+    --brand-gold: #FFD700;
+    --brand-maroon: #800020;
+    --brand-light-gold: #FFFF00;
+    --brand-dark-maroon: #660019;
+}
+
+body {
+    font-family: 'Noto Sans Tamil', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.content-wrapper {
+    min-height: calc(100vh - 120px);
+    padding: 120px 0 80px;
+    position: relative;
+}
+
+.page-container {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 40px;
+    margin: 20px auto;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    max-width: 1200px;
+}
+
+.page-title {
+    color: var(--brand-maroon);
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.page-title i {
+    color: var(--brand-gold);
+    font-size: 2rem;
+}
+
+.floating-symbols {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.symbol {
+    position: absolute;
+    font-size: 4rem;
+    color: rgba(255, 215, 0, 0.1);
+    animation: float 20s ease-in-out infinite;
+}
+
+/* Alert Styling */
+.alert {
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    font-weight: 500;
+}
+
+.alert-danger {
+    background: linear-gradient(45deg, rgba(220, 53, 69, 0.1), rgba(227, 28, 95, 0.1));
+    color: #721c24;
+    border: 2px solid rgba(220, 53, 69, 0.3);
+}
+
+.alert-info {
+    background: linear-gradient(45deg, rgba(13, 202, 240, 0.1), rgba(111, 66, 193, 0.1));
+    color: var(--brand-maroon);
+    border: 2px solid rgba(13, 202, 240, 0.3);
+}
+
+.alert-info .fas {
+    color: var(--brand-gold);
+}
+
+/* Serial Number Styling */
+.text-primary {
+    color: var(--brand-maroon) !important;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+/* Name Styling */
+.fw-semibold {
+    font-weight: 600 !important;
+    color: var(--brand-dark-maroon);
+}
+
+/* Sub-header styling for Uthamam/Mathimam grouping */
+.sub-header-row {
+    background: linear-gradient(45deg, rgba(255, 215, 0, 0.1), rgba(255, 215, 0, 0.05));
+    border-top: 2px solid rgba(255, 215, 0, 0.4);
+    border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.sub-header {
+    font-weight: 600;
+    text-align: center;
+    padding: 12px 15px;
+    color: var(--brand-maroon);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.1), transparent);
+}
+
+.sub-header:hover {
+    background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.15), transparent);
+    transition: background 0.3s ease;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .page-container {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    .sub-header {
+        font-size: 0.8rem;
+        padding: 10px 12px;
+        letter-spacing: 0.5px;
+    }
+}

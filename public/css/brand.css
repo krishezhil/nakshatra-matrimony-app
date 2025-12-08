@@ -1,0 +1,332 @@
+/* Brand CSS - Yellow and Red Theme */
+
+/* Brand Colors */
+:root {
+    --brand-primary: #FFD700;     /* Gold/Yellow */
+    --brand-secondary: #DC143C;    /* Crimson Red */
+    --brand-accent: #FF6347;       /* Tomato Red */
+    --brand-light: #FFFACD;       /* Light Yellow */
+    --brand-dark: #B22222;        /* Fire Brick Red */
+    --brand-text: #8B0000;        /* Dark Red */
+    --brand-white: #FFFFFF;
+    --brand-shadow: rgba(220, 20, 60, 0.2);
+    --brand-gradient: linear-gradient(135deg, #FFD700 0%, #DC143C 100%);
+}
+
+/* Brand Logo */
+.brand-logo {
+    background-image: url('/assets/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60px;
+    width: 200px;
+    display: inline-block;
+}
+
+.brand-logo-large {
+    background-image: url('/assets/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 120px;
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Brand Background */
+.brand-hero {
+    background: var(--brand-gradient);
+    background-attachment: fixed;
+    color: var(--brand-white);
+    position: relative;
+}
+
+.brand-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/assets/welcome.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.brand-hero > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Brand Buttons */
+.btn-brand-primary {
+    background: var(--brand-primary);
+    color: var(--brand-dark);
+    border: 2px solid var(--brand-primary);
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-brand-primary:hover {
+    background: var(--brand-secondary);
+    color: var(--brand-white);
+    border-color: var(--brand-secondary);
+    box-shadow: 0 4px 15px var(--brand-shadow);
+    transform: translateY(-2px);
+}
+
+.btn-brand-secondary {
+    background: var(--brand-secondary);
+    color: var(--brand-white);
+    border: 2px solid var(--brand-secondary);
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-brand-secondary:hover {
+    background: var(--brand-primary);
+    color: var(--brand-dark);
+    border-color: var(--brand-primary);
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.btn-brand-outline {
+    background: transparent;
+    color: var(--brand-secondary);
+    border: 2px solid var(--brand-secondary);
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-brand-outline:hover {
+    background: var(--brand-secondary);
+    color: var(--brand-white);
+    box-shadow: 0 4px 15px var(--brand-shadow);
+}
+
+/* Brand Cards */
+.brand-card {
+    background: var(--brand-white);
+    border: 2px solid var(--brand-light);
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.brand-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px var(--brand-shadow);
+    border-color: var(--brand-primary);
+}
+
+.brand-card-header {
+    background: var(--brand-gradient);
+    color: var(--brand-white);
+    padding: 20px;
+    text-align: center;
+}
+
+.brand-card-body {
+    padding: 25px;
+    color: var(--brand-text);
+}
+
+/* Brand Navigation */
+.brand-navbar {
+    background: var(--brand-gradient);
+    box-shadow: 0 2px 15px var(--brand-shadow);
+}
+
+.brand-navbar .navbar-brand {
+    color: var(--brand-white) !important;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.brand-navbar .nav-link {
+    color: var(--brand-light) !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.brand-navbar .nav-link:hover {
+    color: var(--brand-white) !important;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+/* Brand Forms */
+.brand-form {
+    background: var(--brand-white);
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid var(--brand-light);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.brand-form .form-control {
+    border: 2px solid var(--brand-light);
+    border-radius: 8px;
+    padding: 12px 15px;
+    transition: all 0.3s ease;
+}
+
+.brand-form .form-control:focus {
+    border-color: var(--brand-primary);
+    box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.25);
+}
+
+.brand-form label {
+    color: var(--brand-text);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* Brand Text */
+.brand-text-primary {
+    color: var(--brand-primary);
+}
+
+.brand-text-secondary {
+    color: var(--brand-secondary);
+}
+
+.brand-text-accent {
+    color: var(--brand-accent);
+}
+
+.brand-text-dark {
+    color: var(--brand-dark);
+}
+
+/* Brand Backgrounds */
+.brand-bg-primary {
+    background: var(--brand-primary);
+    color: var(--brand-dark);
+}
+
+.brand-bg-secondary {
+    background: var(--brand-secondary);
+    color: var(--brand-white);
+}
+
+.brand-bg-light {
+    background: var(--brand-light);
+    color: var(--brand-text);
+}
+
+.brand-bg-gradient {
+    background: var(--brand-gradient);
+    color: var(--brand-white);
+}
+
+/* Brand Alerts */
+.alert-brand-success {
+    background: var(--brand-light);
+    border: 2px solid var(--brand-primary);
+    color: var(--brand-dark);
+    border-radius: 10px;
+}
+
+.alert-brand-warning {
+    background: #FFF8DC;
+    border: 2px solid var(--brand-accent);
+    color: var(--brand-dark);
+    border-radius: 10px;
+}
+
+.alert-brand-error {
+    background: #FFE4E1;
+    border: 2px solid var(--brand-secondary);
+    color: var(--brand-dark);
+    border-radius: 10px;
+}
+
+/* Brand Animations */
+@keyframes brandPulse {
+    0% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(255, 215, 0, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
+}
+
+.brand-pulse {
+    animation: brandPulse 2s infinite;
+}
+
+@keyframes brandGlow {
+    from { box-shadow: 0 0 5px var(--brand-primary); }
+    to { box-shadow: 0 0 20px var(--brand-primary), 0 0 30px var(--brand-primary); }
+}
+
+.brand-glow {
+    animation: brandGlow 1.5s ease-in-out infinite alternate;
+}
+
+/* Brand Footer */
+.brand-footer {
+    background: var(--brand-dark);
+    color: var(--brand-light);
+    padding: 40px 0;
+}
+
+.brand-footer h5 {
+    color: var(--brand-primary);
+    font-weight: bold;
+}
+
+.brand-footer a {
+    color: var(--brand-light);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.brand-footer a:hover {
+    color: var(--brand-primary);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .brand-logo-large {
+        height: 80px;
+        width: 200px;
+    }
+    
+    .brand-card {
+        margin-bottom: 20px;
+    }
+    
+    .brand-form {
+        padding: 20px;
+    }
+}
+
+/* Utility Classes */
+.brand-shadow {
+    box-shadow: 0 8px 25px var(--brand-shadow);
+}
+
+.brand-shadow-lg {
+    box-shadow: 0 15px 35px var(--brand-shadow);
+}
+
+.brand-rounded {
+    border-radius: 15px;
+}
+
+.brand-rounded-sm {
+    border-radius: 8px;
+}
+
+.brand-border {
+    border: 2px solid var(--brand-primary);
+}
+
+.brand-border-secondary {
+    border: 2px solid var(--brand-secondary);
+}

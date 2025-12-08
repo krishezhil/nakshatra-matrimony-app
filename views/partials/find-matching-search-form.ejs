@@ -1,0 +1,389 @@
+        <div class="page-title" data-aos="fade-down" data-aos-delay="200">
+            <i class="fas fa-search-plus"></i>Find Matching Profiles
+        </div>
+
+        <% if (typeof error !== 'undefined' && error) { %>
+            <div class="alert alert-warning alert-warning-custom" role="alert" data-aos="fade-up" data-aos-delay="300">
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-search me-3"></i>
+                    <div>
+                        <h6 class="alert-heading mb-2">No Matches Found</h6>
+                        <p class="mb-2"><%= error %></p>
+                        <small class="text-muted">
+                            <i class="fas fa-lightbulb me-1"></i>
+                            <strong>Suggestions:</strong> Try expanding filter, changing qualification level, or adjusting other filters.
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+
+                <form id="find-matching-form" method="POST" action="/matching/find">
+                    <!-- Validation Error Alert (Hidden by default) -->
+                    <div id="validation-error" class="alert alert-danger alert-dismissible fade"
+                        role="alert" style="display: none;">
+                        <i class="fas fa-exclamation-triangle me-2"></i>
+                        <span id="validation-message"></span>
+                        <button type="button" class="btn-close"
+                            onclick="hideValidationError()"></button>
+                    </div>
+
+                    <!-- Search Mode Section -->
+                    <div class="form-section" data-aos="fade-right" data-aos-delay="400">
+                        <div class="section-title">
+                            <i class="fas fa-cog"></i>Search Mode
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="searchMode"
+                                        id="mode-serial" value="serial" <%=(!form.searchMode ||
+                                        form.searchMode==='serial' ) ? 'checked' : '' %>>
+                                    <label class="form-check-label" for="mode-serial">
+                                        <i class="fas fa-hashtag me-2"></i>Serial No with filters
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="searchMode"
+                                        id="mode-nakshatra" value="nakshatra"
+                                        <%=form.searchMode==='nakshatra' ? 'checked' : '' %>>
+                                    <label class="form-check-label" for="mode-nakshatra">
+                                        <i class="fas fa-star me-2"></i>Gender and Nakshatra ID with
+                                        filters
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Serial Number Section -->
+                    <div class="form-section" id="serial-row" data-aos="fade-left" data-aos-delay="500">
+                        <div class="section-title">
+                            <i class="fas fa-id-badge"></i>Serial Number Search
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="form-label">Serial No</label>
+                                <input type="text" class="form-control" name="serial_no" id="serial-no"
+                                    value="<%= form && form.serial_no ? form.serial_no : '' %>"
+                                    placeholder="Enter Profile Serial Number">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Nakshatra and Gender Section -->
+                    <div class="form-section" id="nakshatra-gender-row" style="display:none;"
+                        data-aos="fade-right" data-aos-delay="500">
+                        <div class="section-title">
+                            <i class="fas fa-star"></i>Astrological & Personal Details
+                        </div>
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <label class="form-label">Nakshatra ID</label>
+                                <select class="form-select" name="nakshatraid" id="nakshatraid">
+                                    <option value="">Select Nakshatra</option>
+                                    <option value="1"  <%=form && form.nakshatraid==='1'  ? 'selected' : '' %>>1 - Aswini_Mesham</option>
+                                    <option value="2"  <%=form && form.nakshatraid==='2'  ? 'selected' : '' %>>2 - Barani_Mesham</option>
+                                    <option value="3"  <%=form && form.nakshatraid==='3'  ? 'selected' : '' %>>3 - Karthigai_Mesham</option>
+                                    <option value="4"  <%=form && form.nakshatraid==='4'  ? 'selected' : '' %>>4 - Karthigai_Rishabam</option>
+                                    <option value="5"  <%=form && form.nakshatraid==='5'  ? 'selected' : '' %>>5 - Rohini_Rishabam</option>
+                                    <option value="6"  <%=form && form.nakshatraid==='6'  ? 'selected' : '' %>>6 - Mirugasirisham_Rishabam</option>
+                                    <option value="7"  <%=form && form.nakshatraid==='7'  ? 'selected' : '' %>>7 - Mirugasirisham_Mithunam</option>
+                                    <option value="8"  <%=form && form.nakshatraid==='8'  ? 'selected' : '' %>>8 - Thiruvathirai_Mithunam</option>
+                                    <option value="9"  <%=form && form.nakshatraid==='9'  ? 'selected' : '' %>>9 - Punarpoosam_Mithunam</option>
+                                    <option value="10" <%=form && form.nakshatraid==='10' ? 'selected' : '' %>>10 - Punarpoosam_Kadagam</option>
+                                    <option value="11" <%=form && form.nakshatraid==='11' ? 'selected' : '' %>>11 - Poosam_Kadagam</option>
+                                    <option value="12" <%=form && form.nakshatraid==='12' ? 'selected' : '' %>>12 - Ayilyam_Kadagam</option>
+                                    <option value="13" <%=form && form.nakshatraid==='13' ? 'selected' : '' %>>13 - Magam_Simham</option>
+                                    <option value="14" <%=form && form.nakshatraid==='14' ? 'selected' : '' %>>14 - Pooram_Simham</option>
+                                    <option value="15" <%=form && form.nakshatraid==='15' ? 'selected' : '' %>>15 - Uthiram_Simham</option>
+                                    <option value="16" <%=form && form.nakshatraid==='16' ? 'selected' : '' %>>16 - Uthiram_Kanni</option>
+                                    <option value="17" <%=form && form.nakshatraid==='17' ? 'selected' : '' %>>17 - Hastham_Kanni</option>
+                                    <option value="18" <%=form && form.nakshatraid==='18' ? 'selected' : '' %>>18 - Chithirai_Kanni</option>
+                                    <option value="19" <%=form && form.nakshatraid==='19' ? 'selected' : '' %>>19 - Chithirai_Thulam</option>
+                                    <option value="20" <%=form && form.nakshatraid==='20' ? 'selected' : '' %>>20 - Swathi_Thulam</option>
+                                    <option value="21" <%=form && form.nakshatraid==='21' ? 'selected' : '' %>>21 - Visagam_Thulam</option>
+                                    <option value="22" <%=form && form.nakshatraid==='22' ? 'selected' : '' %>>22 - Visagam_Viruchigam</option>
+                                    <option value="23" <%=form && form.nakshatraid==='23' ? 'selected' : '' %>>23 - Anusam_Viruchigam</option>
+                                    <option value="24" <%=form && form.nakshatraid==='24' ? 'selected' : '' %>>24 - Ketai_Viruchigam</option>
+                                    <option value="25" <%=form && form.nakshatraid==='25' ? 'selected' : '' %>>25 - Moolam_Dhanusu</option>
+                                    <option value="26" <%=form && form.nakshatraid==='26' ? 'selected' : '' %>>26 - Pooradam_Dhanusu</option>
+                                    <option value="27" <%=form && form.nakshatraid==='27' ? 'selected' : '' %>>27 - Uthiradam_Dhanusu</option>
+                                    <option value="28" <%=form && form.nakshatraid==='28' ? 'selected' : '' %>>28 - Uthiradam_Magaram</option>
+                                    <option value="29" <%=form && form.nakshatraid==='29' ? 'selected' : '' %>>29 - Thiruvonam_Magaram</option>
+                                    <option value="30" <%=form && form.nakshatraid==='30' ? 'selected' : '' %>>30 - Avitam_Magaram</option>
+                                    <option value="31" <%=form && form.nakshatraid==='31' ? 'selected' : '' %>>31 - Avitam_Kumbham</option>
+                                    <option value="32" <%=form && form.nakshatraid==='32' ? 'selected' : '' %>>32 - Sadayam_Kumbham</option>
+                                    <option value="33" <%=form && form.nakshatraid==='33' ? 'selected' : '' %>>33 - Pooratathi_Kumbham</option>
+                                    <option value="34" <%=form && form.nakshatraid==='34' ? 'selected' : '' %>>34 - Poortathi_Meenam</option>
+                                    <option value="35" <%=form && form.nakshatraid==='35' ? 'selected' : '' %>>35 - Uthiratathi_Meenam</option>
+                                    <option value="36" <%=form && form.nakshatraid==='36' ? 'selected' : '' %>>36 - Revathi_Meenam</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">Gender</label>
+                                <select class="form-select" name="gender" id="gender">
+                                    <option value="">Select Gender</option>
+                                    <option value="Male" <%=form && form.gender==='Male' ? 'selected'
+                                        : '' %>>Male</option>
+                                    <option value="Female" <%=form && form.gender==='Female'
+                                        ? 'selected' : '' %>>Female</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">Age</label>
+                                <input type="number" min="18" max="100" class="form-control"
+                                    name="seeker_age" id="seeker-age"
+                                    value="<%= form && form.seeker_age ? form.seeker_age : '' %>"
+                                    placeholder="Enter your age">
+                            </div>
+                        </div>
+                        <div class="row g-3 mt-2" id="nakshatraRasiRow" style="display: none;">
+                            <div class="col-md-6">
+                                <label class="form-label">Your Rasi/Lagnam</label>
+                                <select class="form-select" name="seekerRasi" id="seeker-rasi" 
+                                        readonly onclick="return false;" onkeydown="return false;"
+                                        style="background-color: #f8f9fa; color: #6c757d; cursor: not-allowed;"
+                                        title="This field is currently disabled by admin - fixed to 'Suth' for all searches"
+                                        data-bs-toggle="tooltip" data-bs-placement="top">
+                                    <option value="">Select Your Rasi Lagnam</option>
+                                    <option value="Suth" <%= !form || !form.seekerRasi || form.seekerRasi === 'Suth' ? 'selected' : '' %>>Suth</option>
+                                    <option value="Sani" <%= form && form.seekerRasi === 'Sani' ? 'selected' : '' %>>Sani</option>
+                                    <option value="Sevai" <%= form && form.seekerRasi === 'Sevai' ? 'selected' : '' %>>Sevai</option>
+                                    <option value="Raaghu/Kethu" <%= form && form.seekerRasi === 'Raaghu/Kethu' ? 'selected' : '' %>>Raaghu/Kethu</option>
+                                    <option value="Sani/Sevai" <%= form && form.seekerRasi === 'Sani/Sevai' ? 'selected' : '' %>>Sani/Sevai</option>
+                                    <option value="Sani/Kethu/Raaghu" <%= form && form.seekerRasi === 'Sani/Kethu/Raaghu' ? 'selected' : '' %>>Sani/Kethu/Raaghu</option>
+                                    <option value="Sevai/Kethu/Raaghu" <%= form && form.seekerRasi === 'Sevai/Kethu/Raaghu' ? 'selected' : '' %>>Sevai/Kethu/Raaghu</option>
+                                    <option value="Sani/Sevai/Kethu/Raaghu" <%= form && form.seekerRasi === 'Sani/Sevai/Kethu/Raaghu' ? 'selected' : '' %>>Sani/Sevai/Kethu/Raaghu</option>
+                                </select>
+                            </div>
+                            <!-- Gothram field (nakshatra mode only) -->
+                            <div class="col-md-5 d-none" id="nakshatraGothramSection">
+                                <label class="form-label">Your Gothram <span class="text-danger">*</span></label>
+                                <select class="form-control" name="gothram" id="nakshatra-gothram" required
+                                        data-saved-value='<%- JSON.stringify((form && form.gothram) || '') %>'
+                                        style="width: 100%;">
+                                    <option value="" disabled <%= !(form && form.gothram) ? 'selected' : '' %>>Select Gothram (required)</option>
+                                    <!-- Options loaded dynamically via gothram-dropdown.js -->
+                                </select>
+                                <small class="text-muted">
+                                    <i class="fas fa-info-circle me-1"></i>Required for matrimonial compatibility
+                                </small>
+                            </div>
+                            <!-- Add Gothram button (nakshatra mode only) -->
+                            <div class="col-md-1 d-none" id="nakshatraGothramButtonSection">
+                                <label class="form-label" style="visibility: hidden;">Add</label>
+                                <button type="button" class="btn brand-btn-secondary btn-sm w-100" 
+                                        data-bs-toggle="modal" data-bs-target="#addGothramModal" 
+                                        title="Add New Gothram" 
+                                        onclick="event.preventDefault(); event.stopPropagation();">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Additional Filters Section -->
+                    <div class="form-section" id="additional-filters-row" data-aos="fade-up"
+                        data-aos-delay="600">
+                        <div class="section-title">
+                            <i class="fas fa-filter"></i>Additional Filters
+                        </div>
+                        <div class="row g-3">
+                            <div class="col-md-5">
+                                <label class="form-label">Qualification Filter</label>
+                                <div class="d-flex align-items-center gap-2">
+                                    <select class="form-select" name="qualification" id="qualification">
+                                        <option value="">No Qualification Filter</option>
+                                        <option value="School" <%=form && form.qualification==='School'
+                                            ? 'selected' : '' %>>School or higher</option>
+                                        <option value="Diploma" <%=form &&
+                                            form.qualification==='Diploma' ? 'selected' : '' %>>Diploma
+                                            or higher</option>
+                                        <option value="UG" <%=form && form.qualification==='UG'
+                                            ? 'selected' : '' %>>UG or higher</option>
+                                        <option value="PG" <%=form && form.qualification==='PG'
+                                            ? 'selected' : '' %>>PG or higher</option>
+                                        <option value="PHD" <%=form && form.qualification==='PHD'
+                                            ? 'selected' : '' %>>PHD</option>
+                                        <option value="Doctor" <%=form && form.qualification==='Doctor'
+                                            ? 'selected' : '' %>>Doctor</option>
+                                    </select>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox"
+                                            name="exactQualification" id="exactQualification"
+                                            value="true"
+                                            title="Match exact qualification only (no higher qualifications)"
+                                            data-bs-toggle="tooltip" data-bs-placement="top" <%=form &&
+                                            form.exactQualification ? 'checked' : '' %>>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <label class="form-label">Region Filter <small class="text-muted">(Enhanced Multi-select)</small></label>
+                                <%
+                                // Helper function for region selection logic with edge case handling
+                                function isRegionSelected(regionValue) {
+                                  if (!form) return false;
+                                  
+                                  // Priority 1: Check new multi-region format
+                                  if (form.regions && Array.isArray(form.regions)) {
+                                    return form.regions.includes(regionValue);
+                                  }
+                                  
+                                  // Priority 2: Fallback to legacy single region format
+                                  return form.region === regionValue;
+                                }
+                                %>
+                                <select class="form-select" name="regions" id="regions" multiple 
+                                        data-placeholder="Choose regions..." 
+                                        data-allow-clear="true"
+                                        data-close-on-select="false">
+                                    <option value="Chennai" <%= isRegionSelected('Chennai') ? 'selected' : '' %>>Chennai</option>
+                                    <option value="Chengalpattu" <%= isRegionSelected('Chengalpattu') ? 'selected' : '' %>>Chengalpattu</option>
+                                    <option value="Thiruvallur" <%= isRegionSelected('Thiruvallur') ? 'selected' : '' %>>Thiruvallur</option>
+                                    <option value="Kancheepuram" <%= isRegionSelected('Kancheepuram') ? 'selected' : '' %>>Kancheepuram</option>
+                                    <option value="Vellore" <%= isRegionSelected('Vellore') ? 'selected' : '' %>>Vellore</option>
+                                    <option value="Other Districts in TN" <%= isRegionSelected('Other Districts in TN') ? 'selected' : '' %>>Other Districts in TN</option>
+                                    <option value="Pondicherry" <%= isRegionSelected('Pondicherry') ? 'selected' : '' %>>Pondicherry</option>
+                                    <option value="Andhra Pradesh" <%= isRegionSelected('Andhra Pradesh') ? 'selected' : '' %>>Andhra Pradesh</option>
+                                    <option value="Other States in India" <%= isRegionSelected('Other States in India') ? 'selected' : '' %>>Other States in India</option>
+                                    <option value="Overseas" <%= isRegionSelected('Overseas') ? 'selected' : '' %>>Overseas</option>
+                                    <option value="Others(TN)" <%= isRegionSelected('Others(TN)') ? 'selected' : '' %>>Others(TN)</option>
+                                    <option value="Others(IND)" <%= isRegionSelected('Others(IND)') ? 'selected' : '' %>>Others(IND)</option>
+                                </select>
+                                <small class="text-muted mt-1 d-block">
+                                    <i class="fas fa-info-circle me-1"></i>
+                                    Click to select multiple regions. Use search to find regions quickly. Leave empty for no region filter.
+                                </small>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <label class="form-label" for="nakshatraPreferences">
+                                    <i class="fas fa-star me-1"></i>
+                                    Nakshatra Preferences
+                                </label>
+                                <%
+                                // Helper function to check if nakshatra is selected
+                                function isNakshatraSelected(nakshatraId) {
+                                  if (!form || !form.nakshatraPreferences) return false;
+                                  
+                                  // Convert nakshatraId to string for consistent comparison
+                                  const targetId = nakshatraId.toString();
+                                  
+                                  // Priority 1: Handle array format (multi-select)
+                                  if (Array.isArray(form.nakshatraPreferences)) {
+                                    return form.nakshatraPreferences.some(id => id.toString() === targetId);
+                                  }
+                                  
+                                  // Priority 2: Fallback to single nakshatra format
+                                  return form.nakshatraPreferences.toString() === targetId;
+                                }
+                                %>
+                                <select class="form-select" name="nakshatraPreferences" id="nakshatraPreferences" multiple 
+                                        data-placeholder="Choose preferred nakshatras..." 
+                                        data-allow-clear="true"
+                                        data-close-on-select="false">
+                                    <% if (typeof nakshatraData !== 'undefined' && nakshatraData) { %>
+                                        <% nakshatraData.forEach(function(nakshatra) { %>
+                                            <% if (nakshatra.id) { %>
+                                                <option value="<%= nakshatra.id %>" <%= isNakshatraSelected(nakshatra.id) ? 'selected' : '' %>>
+                                                    <%= nakshatra.display_name || nakshatra.name %>
+                                                </option>
+                                            <% } %>
+                                        <% }); %>
+                                    <% } %>
+                                </select>
+                                <small class="text-muted mt-1 d-block">
+                                    <i class="fas fa-info-circle me-1"></i>
+                                    Select preferred nakshatras for matching. Leave empty to search all nakshatras.
+                                </small>
+                            </div>
+                        </div>
+
+                        <!-- New Row for Advanced Filters -->
+                        <div class="row g-3 mt-3">
+                            <div class="col-md-5">
+                                <label class="form-label">Income Range Filter</label>
+                                <div class="d-flex align-items-center gap-2">
+                                    <input type="number" class="form-control" name="minIncome"
+                                        placeholder="Min Income" title="Minimum monthly income"
+                                        value="<%= form && form.minIncome ? form.minIncome : '' %>">
+                                    <span class="text-muted">to</span>
+                                    <input type="number" class="form-control" name="maxIncome"
+                                        placeholder="Max Income" title="Maximum monthly income"
+                                        value="<%= form && form.maxIncome ? form.maxIncome : '' %>">
+                                </div>
+                                <small class="text-muted">
+                                    Leave empty for no income filter<br>
+                                    <i class="fas fa-info-circle"></i> 
+                                    <em>Profiles without income information are included to maximize matches</em>
+                                </small>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label" id="agePreferenceLabel">Age Preference</label>
+                                <input type="number" class="form-control" name="agePreference" 
+                                       id="agePreference" min="18" max="75"
+                                       placeholder="Optional age preference"
+                                       value="<%= form && form.agePreference ? form.agePreference : '' %>">
+                                <small class="text-muted" id="agePreferenceHelp">
+                                    <i class="fas fa-info-circle"></i>
+                                    Refine age range based on your preference (optional)
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2">
+                            <!-- Empty column for spacing -->
+                        </div>
+                    </div>
+
+                    <!-- Compatibility Options -->
+                    <div class="row mt-4">
+                        <div class="col-md-12">
+                            <div class="section-title compatibility-section-title">
+                                <i class="fas fa-heart"></i>Compatibility Options
+                            </div>
+                            <div class="d-flex gap-4 flex-wrap">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox"
+                                        name="includeMathimam" id="includeMathimam" value="true"
+                                        <%=(typeof form==='undefined' || typeof
+                                        form.includeMathimam==='undefined' ) ? 'checked' :
+                                        ((form.includeMathimam===true || form.includeMathimam==='true' )
+                                        ? 'checked' : '' ) %>>
+                                    <label class="form-check-label" for="includeMathimam">
+                                        <i class="fas fa-star-half-alt me-2"></i>Include Mathimam
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox"
+                                        name="includeRemarried" id="includeRemarried" value="true"
+                                        <%=form && form.includeRemarried ? 'checked' : '' %>>
+                                    <label class="form-check-label" for="includeRemarried">
+                                        <i class="fas fa-redo me-2"></i>Include Remarried
+                                    </label>
+                                </div>
+                                <div class="form-check" style="display: none;">
+                                    <input class="form-check-input" type="checkbox"
+                                        name="enableRasiCompatibility" id="enableRasiCompatibility"
+                                        value="true" <%=(typeof form==='undefined' || typeof form.enableRasiCompatibility==='undefined') ? 'checked' :
+                                        (form.enableRasiCompatibility ? 'checked' : '' ) %>>
+                                    <label class="form-check-label" for="enableRasiCompatibility">
+                                        <i class="fas fa-moon me-2"></i>Rasi/Lagnam Compatibility
+                                    </label>
+                                    <small class="text-muted d-block">
+                                        Applies traditional Suth and planetary risk compatibility rules
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Submit Section -->
+                <div class="text-center mt-4" data-aos="fade-up" data-aos-delay="700">
+                    <button type="submit" class="search-btn">
+                        <i class="fas fa-search"></i>Find Matching Profiles
+                    </button>
+                </div>
+                </form>

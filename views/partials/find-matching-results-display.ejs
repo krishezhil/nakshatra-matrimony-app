@@ -1,0 +1,205 @@
+        <!-- Results Section -->
+        <% if (typeof showResults !== 'undefined' && showResults) { %>
+            <%
+            // Phase 1: Group profiles by matching source
+            const uthamamProfiles = profiles.filter(p => p.matchingSource === 'uthamam');
+            const mathimamProfiles = profiles.filter(p => p.matchingSource === 'mathimam');
+            
+            // Determine which sections to show
+            const showUthamam = uthamamProfiles.length > 0;
+            const showMathimam = mathimamProfiles.length > 0 && (typeof form !== 'undefined' && form.includeMathimam === true);
+            %>
+            <div id="results-section" class="form-section mt-4" data-aos="fade-up" data-aos-delay="800">
+                <div class="section-title">
+                    <i class="fas fa-users"></i>Matching Profiles Found (<%= profiles.length %>)
+                    <% if (typeof seekerProfile !== 'undefined' && seekerProfile && seekerProfile.name) { %>
+                        for <%= seekerProfile.name %>
+                        <% if (seekerProfile.extractedAge || seekerProfile.age) { %>
+                            (Age: <%= seekerProfile.extractedAge || seekerProfile.age %>)
+                        <% } %>
+                    <% } %>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr class="results-table-header">
+                                <th><i class="fas fa-hashtag me-1"></i>Serial No</th>
+                                <th><i class="fas fa-user me-1"></i>Name</th>
+                                <th><i class="fas fa-clock me-1"></i>Age</th>
+                                <th><i class="fas fa-star me-1"></i>Nakshatra</th>
+                                <th style="display: none;"><i class="fas fa-moon me-1"></i>Rasi/Lagnam</th>
+                                <th><i class="fas fa-graduation-cap me-1"></i>Qualification</th>
+                                <th>₹ Monthly Income</th>
+                                <th><i class="fas fa-map-marker-alt me-1"></i>Region</th>
+                                <th>📞 Contact</th>
+                                <th><i class="fas fa-heart me-1"></i>Porutham</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Uthamam Section -->
+                            <% if (showUthamam) { %>
+                                <tr class="sub-header-row">
+                                    <td colspan="10" class="sub-header">UTHAMAM MATCHES</td>
+                                </tr>
+                                <% uthamamProfiles.forEach(function(profile) { %>
+                                    <tr class="results-table-row">
+                                        <td class="fw-bold text-primary">
+                                            <%= profile.serial_no || profile.id %>
+                                        </td>
+                                        <td class="fw-semibold">
+                                            <%= profile.name %>
+                                        </td>
+                                        <td class="fw-semibold">
+                                            <%= typeof profile.age !== 'undefined' ? profile.age : '' %>
+                                        </td>
+                                        <td>
+                                            <%= profile.nakshatraName || profile.nakshatraid %>
+                                        </td>
+                                        <td style="display: none;">
+                                            <% if (profile.rasi_lagnam) { %>
+                                                <span class="badge bg-secondary text-white">
+                                                    <%= profile.rasi_lagnam %>
+                                                </span>
+                                                <% } else { %>
+                                                    <span class="text-muted">-</span>
+                                                    <% } %>
+                                        </td>
+                                        <td>
+                                            <%= profile.qualification %>
+                                        </td>
+                                        <td class="text-success fw-semibold">
+                                            <% if (profile.monthly_income && profile.monthly_income !== '' ) { %>
+                                                ₹<%= Number(profile.monthly_income).toLocaleString('en-IN') %>
+                                                    <% } else { %>
+                                                        <span class="text-muted">-</span>
+                                                        <% } %>
+                                        </td>
+                                        <td>
+                                            <%= profile.region %>
+                                        </td>
+                                        <td>
+                                            <%= profile.contact_no || '-' %>
+                                        </td>
+                                        <td>
+                                            <% if (typeof profile.porutham !=='undefined' && profile.porutham) {
+                                                %>
+                                                <span class="badge bg-success" data-original-porutham="<%= profile.porutham %>" id="porutham-<%= profile.id %>">
+                                                    <%= profile.porutham %>
+                                                </span>
+                                                <% } else { %>
+                                                    <span class="badge bg-secondary">-</span>
+                                                    <% } %>
+                                        </td>
+                                    </tr>
+                                <% }); %>
+                            <% } %>
+                            
+                            <!-- Mathimam Section -->
+                            <% if (showMathimam) { %>
+                                <tr class="sub-header-row">
+                                    <td colspan="10" class="sub-header">MATHIMAM MATCHES</td>
+                                </tr>
+                                <% mathimamProfiles.forEach(function(profile) { %>
+                                    <tr class="results-table-row">
+                                        <td class="fw-bold text-primary">
+                                            <%= profile.serial_no || profile.id %>
+                                        </td>
+                                        <td class="fw-semibold">
+                                            <%= profile.name %>
+                                        </td>
+                                        <td class="fw-semibold">
+                                            <%= typeof profile.age !== 'undefined' ? profile.age : '' %>
+                                        </td>
+                                        <td>
+                                            <%= profile.nakshatraName || profile.nakshatraid %>
+                                        </td>
+                                        <td style="display: none;">
+                                            <% if (profile.rasi_lagnam) { %>
+                                                <span class="badge bg-secondary text-white">
+                                                    <%= profile.rasi_lagnam %>
+                                                </span>
+                                                <% } else { %>
+                                                    <span class="text-muted">-</span>
+                                                    <% } %>
+                                        </td>
+                                        <td>
+                                            <%= profile.qualification %>
+                                        </td>
+                                        <td class="text-success fw-semibold">
+                                            <% if (profile.monthly_income && profile.monthly_income !== '' ) { %>
+                                                ₹<%= Number(profile.monthly_income).toLocaleString('en-IN') %>
+                                                    <% } else { %>
+                                                        <span class="text-muted">-</span>
+                                                        <% } %>
+                                        </td>
+                                        <td>
+                                            <%= profile.region %>
+                                        </td>
+                                        <td>
+                                            <%= profile.contact_no || '-' %>
+                                        </td>
+                                        <td>
+                                            <% if (typeof profile.porutham !=='undefined' && profile.porutham) {
+                                                %>
+                                                <span class="badge bg-success" data-original-porutham="<%= profile.porutham %>" id="porutham-<%= profile.id %>">
+                                                    <%= profile.porutham %>
+                                                </span>
+                                                <% } else { %>  
+                                                    <span class="badge bg-secondary">-</span>
+                                                    <% } %>
+                                        </td>
+                                    </tr>
+                                <% }); %>
+                            <% } %>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Download Options -->
+                <div class="download-section mt-4 p-3">
+                    <h6 class="mb-3 download-section-title">
+                        <i class="fas fa-download me-2"></i>Download Matching Profiles
+                    </h6>
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <button type="button" class="btn btn-success w-100"
+                                onclick="downloadProfiles('excel', event)">
+                                <i class="fas fa-file-excel me-2"></i>Save Excel File
+                                <small class="d-block">Choose location & save</small>
+                            </button>
+                        </div>
+                        <div class="col-md-4">
+                            <button type="button" class="btn btn-danger w-100"
+                                onclick="downloadProfiles('pdf', event)">
+                                <i class="fas fa-file-pdf me-2"></i>Save PDF File
+                                <small class="d-block">Professional format</small>
+                            </button>
+                        </div>
+                        <!-- WhatsApp Format (text only) - Commented out for future use
+                        <div class="col-md-3">
+                            <button type="button" class="btn btn-primary w-100"
+                                onclick="downloadProfiles('whatsapp')">
+                                <i class="fab fa-whatsapp me-2"></i>WhatsApp Format
+                                <small class="d-block">Text format sharing</small>
+                            </button>
+                        </div>
+                        -->
+                        <div class="col-md-4">
+                            <button type="button" class="btn btn-warning w-100"
+                                onclick="showWhatsAppModal()">
+                                <i class="fab fa-whatsapp me-2"></i>WhatsApp PDF
+                                <small class="d-block">Send PDF to WhatsApp</small>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <% } else if (typeof showNoResults !== 'undefined' && showNoResults) { %>
+                <div class="alert alert-info text-center mt-4" role="alert" data-aos="fade-up"
+                    data-aos-delay="400">
+                    <i class="fas fa-search me-2 alert-info-custom"></i>
+                    <h5 class="mb-2">No matching profiles found</h5>
+                    <p class="mb-0">Try adjusting your search criteria or filters to find more matches.</p>
+                </div>
+                <% } %>
+

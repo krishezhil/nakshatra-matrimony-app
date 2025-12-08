@@ -1,0 +1,115 @@
+<%- include('partials/head') %>
+
+<body class="d-flex flex-column min-vh-100"
+    style="background: url('/assets/background-image.jpg') no-repeat center center fixed; background-size: cover;">
+    <!-- Floating Hindu Symbols -->
+    <div class="floating-symbols">
+        <div class="symbol" style="top: 45%; left: 5%;">🪔</div>
+        <div class="symbol" style="top: 80%; left: 85%;">🪔</div>
+    </div>
+
+    <!-- Background Overlay -->
+    <div
+        style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(128, 0, 32, 0.2) 100%); z-index: -1;">
+    </div>
+
+    <%- include('partials/navbar') %>
+    
+    <% 
+        // Ensure form is always defined to avoid reference errors
+        if (typeof form === 'undefined' || !form || Object.keys(form).length === 0) {
+            form = {
+                searchMode: 'serial',
+                serial_no: '',
+                nakshatraid: '',
+                gender: '',
+                seeker_age: '',
+                qualification: '',
+                exactQualification: false,
+                region: '',
+                includeMathimam: true,
+                includeRemarried: false,
+                minIncome: '',
+                maxIncome: '',
+                enableRasiCompatibility: true
+            };
+        }           
+    %>
+
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="page-container" data-aos="fade-up" data-aos-duration="1000">
+
+                <%- include('partials/find-matching-search-form', {form: form, error: typeof error !== 'undefined' ? error : null}) %>
+                
+                <%
+                // Compute display flags based on business logic
+                var profilesArray = typeof profiles !== 'undefined' ? profiles : [];
+                var errorVar = typeof error !== 'undefined' ? error : null;
+                var showResults = false;
+                var showNoResults = false;
+                
+                if (profilesArray && Array.isArray(profilesArray)) {
+                    if (profilesArray.length > 0) {
+                        showResults = true;
+                    } else if (profilesArray.length === 0 && !errorVar) {
+                        showNoResults = true;
+                    }
+                }
+                %>
+                
+                <%- include('partials/find-matching-results-display', {
+                    profiles: profilesArray,
+                    showResults: showResults,
+                    showNoResults: showNoResults,
+                    seekerProfile: typeof seekerProfile !== 'undefined' ? seekerProfile : null
+                }) %>
+
+            </div>
+        </div>
+    </div>
+
+    <%- include('partials/footer') %>
+
+    <%- include('partials/whatsapp-modal') %>
+
+    <!-- Add Gothram Modal -->
+    <div class="modal fade" id="addGothramModal" tabindex="-1" aria-labelledby="addGothramModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addGothramModalLabel">
+                        <i class="fas fa-plus me-2"></i>Add New Gothram
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="addGothramForm">
+                        <div class="mb-3">
+                            <label for="newGothramName" class="form-label">Gothram Name <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="newGothramName" name="name" 
+                                   placeholder="Enter gothram name" required maxlength="50">
+                            <div class="invalid-feedback" id="gothramErrorMsg"></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        <i class="fas fa-times me-2"></i>Cancel
+                    </button>
+                    <button type="button" class="btn brand-btn" id="saveGothramBtn">
+                        <i class="fas fa-save me-2"></i>Save Gothram
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('partials/find-matching-scripts', {
+        profiles: profilesArray,
+        seekerProfile: typeof seekerProfile !== 'undefined' ? seekerProfile : null,
+        form: form
+    }) %>
+
+</body>
+</html>

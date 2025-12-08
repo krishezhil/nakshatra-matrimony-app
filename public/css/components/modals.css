@@ -1,0 +1,86 @@
+/* Modal Components Styles */
+
+/* WhatsApp Modal Specific Styles */
+.whatsapp-modal-content {
+    border-radius: 15px;
+    border: 2px solid var(--brand-gold);
+}
+
+.whatsapp-modal-header {
+    background: linear-gradient(45deg, var(--brand-maroon), var(--brand-dark-maroon));
+    color: var(--brand-gold);
+    border-bottom: 2px solid var(--brand-gold);
+}
+
+.whatsapp-modal-body {
+    background: rgba(255, 215, 0, 0.05);
+}
+
+.whatsapp-phone-label {
+    color: var(--brand-maroon);
+    font-weight: 600;
+}
+
+.whatsapp-phone-input {
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    border-radius: 8px;
+}
+
+.whatsapp-info-alert {
+    border-color: var(--brand-gold);
+    background: rgba(255, 215, 0, 0.1);
+}
+
+.whatsapp-modal-footer {
+    background: rgba(255, 255, 255, 0.8);
+    border-top: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+/* Download Section Styles */
+.download-section {
+    background: rgba(255, 215, 0, 0.1);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.download-section-title {
+    color: var(--brand-maroon);
+    font-weight: 600;
+}
+
+/* Alert Variants */
+.alert-warning-custom {
+    border-left: 5px solid var(--brand-maroon);
+    background-color: #fff3cd;
+    border-color: var(--brand-gold);
+}
+
+.alert-warning-custom .fas {
+    font-size: 1.5rem;
+    color: var(--brand-maroon);
+}
+
+.alert-warning-custom h6 {
+    color: var(--brand-maroon);
+}
+
+.alert-info-custom .fas {
+    font-size: 1.5rem;
+}
+
+/* Compatibility Section */
+.compatibility-section-title {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+/* Table Header Specific */
+.results-table-header {
+    background: linear-gradient(45deg, var(--brand-maroon), var(--brand-dark-maroon));
+    color: var(--brand-gold);
+}
+
+/* Table Row Transition */
+.results-table-row {
+    transition: all 0.3s ease;
+}

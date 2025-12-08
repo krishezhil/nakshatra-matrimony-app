@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Export Test</title>
+</head>
+<body>
+    <h1>Export Functionality Test</h1>
+    
+    <button onclick="testExcelExport()">Test Excel Export</button>
+    <button onclick="testPDFExport()">Test PDF Export</button>
+    
+    <script>
+        function testExcelExport() {
+            const testProfiles = [{
+                name: "Test User",
+                gender: "Male",
+                age: 25,
+                qualification: "B.Tech",
+                nakshatraid: 1,
+                monthly_income: 50000,
+                birth_date: "1999-01-01",
+                birth_place: "Chennai",
+                job_details: "Software Engineer",
+                rasi_lagnam: "Mesham",
+                gothram: "Bharadwaj",
+                contact_no: "9876543210",
+                address: "Test Address",
+                father_name: "Test Father",
+                mother_name: "Test Mother",
+                siblings: "1",
+                region: "Chennai",
+                is_remarried: "No"
+            }];
+            
+            const seekerInfo = {
+                name: "Test Seeker",
+                serialNo: "123"
+            };
+            
+            const form = document.createElement('form');
+            form.method = 'POST';
+            form.action = '/export/matching-profiles';
+            
+            // Add profiles
+            const profilesInput = document.createElement('input');
+            profilesInput.type = 'hidden';
+            profilesInput.name = 'profiles';
+            profilesInput.value = JSON.stringify(testProfiles);
+            form.appendChild(profilesInput);
+            
+            // Add seeker info
+            const seekerInput = document.createElement('input');
+            seekerInput.type = 'hidden';
+            seekerInput.name = 'seekerInfo';
+            seekerInput.value = JSON.stringify(seekerInfo);
+            form.appendChild(seekerInput);
+            
+            // Add format
+            const formatInput = document.createElement('input');
+            formatInput.type = 'hidden';
+            formatInput.name = 'format';
+            formatInput.value = 'excel';
+            form.appendChild(formatInput);
+            
+            document.body.appendChild(form);
+            form.submit();
+        }
+        
+        function testPDFExport() {
+            const testProfiles = [{
+                name: "Test User PDF",
+                gender: "Female",
+                age: 24,
+                qualification: "MBA",
+                nakshatraid: 2,
+                monthly_income: 75000,
+                birth_date: "2000-06-15",
+                birth_place: "Bangalore",
+                job_details: "Business Analyst",
+                rasi_lagnam: "Vrishabam",
+                gothram: "Kasyapa",
+                contact_no: "9876543211",
+                address: "Test Address PDF",
+                father_name: "Test Father PDF",
+                mother_name: "Test Mother PDF",
+                siblings: "2",
+                region: "Bangalore",
+                is_remarried: "No",
+                porutham: "8"
+            }];
+            
+            const seekerInfo = {
+                name: "Test Seeker PDF",
+                serialNo: "456"
+            };
+            
+            const form = document.createElement('form');
+            form.method = 'POST';
+            form.action = '/export/matching-profiles';
+            
+            // Add profiles
+            const profilesInput = document.createElement('input');
+            profilesInput.type = 'hidden';
+            profilesInput.name = 'profiles';
+            profilesInput.value = JSON.stringify(testProfiles);
+            form.appendChild(profilesInput);
+            
+            // Add seeker info
+            const seekerInput = document.createElement('input');
+            seekerInput.type = 'hidden';
+            seekerInput.name = 'seekerInfo';
+            seekerInput.value = JSON.stringify(seekerInfo);
+            form.appendChild(seekerInput);
+            
+            // Add format
+            const formatInput = document.createElement('input');
+            formatInput.type = 'hidden';
+            formatInput.name = 'format';
+            formatInput.value = 'pdf';
+            form.appendChild(formatInput);
+            
+            document.body.appendChild(form);
+            form.submit();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<nav class="navbar navbar-expand-lg fixed-top" style="background-color: #800020 !important; background: #800020 !important; z-index: 1040; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);">
+  <div class="container-fluid">
+    <!-- Brand with Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="/" style="color: #FFD700 !important; font-weight: bold; text-decoration: none;">
+      <img src="/assets/logo.png" alt="கந்த கோட்டம் சேவா சங்கம் Logo" width="50" height="50" class="me-3" style="border-radius: 50%; border: 2px solid #FFD700; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);">
+      <span style="font-family: 'Noto Sans Tamil', sans-serif; font-size: 1.4rem; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); color: #FFD700 !important;">கந்த கோட்டம் சேவா சங்கம்</span>
+    </a>
+    
+    <!-- Mobile Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border: 2px solid #FFD700 !important; background: #800020 !important;">
+      <span style="background-image: url('data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27%23FFD700%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e'); width: 20px; height: 20px; display: block;"></span>
+    </button>
+    
+    <!-- Navigation Items -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link nav-link-custom" href="/">
+            <i class="fas fa-home me-2"></i>Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link-custom" href="/profile/create">
+            <i class="fas fa-user-plus me-2"></i>Create Profile
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link-custom" href="/matching/find">
+            <i class="fas fa-star me-2"></i>Find Matching
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link-custom" href="/profile/showall">
+            <i class="fas fa-search me-2"></i>Search Profiles
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link-custom" href="/backup/admin">
+            <i class="fas fa-database me-2"></i>Data Backup
+          </a>
+        </li>
+      </ul>
+      
+      <!-- Logout Button - Temporarily Removed -->
+      <!-- 
+      <form id="logoutForm" action="/api/auth/logout" method="POST" class="d-flex align-items-center m-0 p-0">
+        <button type="submit" class="btn logout-btn">
+          <i class="fas fa-sign-out-alt me-2"></i>Logout
+        </button>
+      </form>
+      -->
+    </div>
+  </div>
+</nav>
+
+<style>
+/* Navbar Background Override */
+.navbar {
+  background-color: #800020 !important;
+  background: #800020 !important;
+}
+
+/* Navigation Link Styles - Enhanced Visibility with Hover State as Default */
+.nav-link-custom {
+  color: #FFFF00 !important; /* Changed from #FFD700 to match hover state */
+  font-weight: 700 !important;
+  font-size: 1.3rem !important;
+  padding: 12px 20px !important;
+  margin: 0 8px !important;
+  border-radius: 12px !important;
+  transition: all 0.3s ease !important;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 1) !important; /* Enhanced to match hover */
+  background: linear-gradient(45deg, rgba(255, 215, 0, 0.5), rgba(255, 255, 0, 0.4)) !important; /* Enhanced to match hover */
+  border: 2px solid rgba(255, 215, 0, 0.9) !important; /* Enhanced to match hover */
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.5) !important; /* Enhanced to match hover */
+  backdrop-filter: blur(5px) !important;
+  letter-spacing: 0.5px !important;
+  transform: translateY(-1px) scale(1.02) !important; /* Slight transform to match hover feel */
+}
+
+.nav-link-custom i {
+  color: #FFD700 !important; /* Changed to match hover state */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8) !important;
+  filter: brightness(1.5) drop-shadow(0 0 8px rgba(255, 255, 0, 0.8)) !important; /* Enhanced to match hover */
+  font-size: 1.1em !important;
+  margin-right: 8px !important;
+  transform: scale(1.05) !important; /* Slight scale to match hover */
+}
+
+.nav-link-custom:hover {
+  color: #FFFFFF !important; /* Even brighter on hover */
+  background: linear-gradient(45deg, rgba(255, 215, 0, 0.7), rgba(255, 255, 0, 0.6)) !important; /* More intense */
+  transform: translateY(-5px) scale(1.08) !important; /* More dramatic transform */
+  box-shadow: 0 12px 35px rgba(255, 215, 0, 0.7) !important; /* Stronger shadow */
+  border-color: rgba(255, 255, 255, 0.8) !important; /* White border on hover */
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 1) !important; /* Stronger text shadow */
+}
+
+.nav-link-custom:hover i {
+  color: #FFFFFF !important; /* White icons on hover */
+  filter: brightness(2) drop-shadow(0 0 12px rgba(255, 255, 255, 0.9)) !important; /* Bright white glow */
+  transform: scale(1.15) !important; /* More dramatic scale */
+}
+
+.nav-link-custom:active,
+.nav-link-custom.active {
+  color: #FFFF00 !important;
+  background: linear-gradient(45deg, rgba(255, 215, 0, 0.7), rgba(255, 255, 0, 0.6)) !important;
+  border-color: rgba(255, 215, 0, 1) !important;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Logout Button Styles - Temporarily Commented Out */
+/*
+.logout-btn {
+  background: linear-gradient(45deg, #FFD700, #FFA500) !important;
+  color: #800020 !important;
+  border: 2px solid #FFD700 !important;
+  font-weight: bold !important;
+  padding: 8px 20px !important;
+  border-radius: 25px !important;
+  transition: all 0.3s ease !important;
+  font-size: 1rem !important;
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3) !important;
+}
+
+.logout-btn:hover {
+  background: linear-gradient(45deg, #FFFF00, #FFD700) !important;
+  color: #800020 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 18px rgba(255, 215, 0, 0.5) !important;
+}
+*/
+
+/* Brand Hover Effect */
+.navbar-brand:hover {
+  color: #FFFFFF !important;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7) !important;
+}
+
+.navbar-brand span:hover {
+  color: #FFFFFF !important;
+}
+
+/* Mobile Responsiveness - Enhanced */
+@media (max-width: 991px) {
+  .navbar-brand span {
+    font-size: 1.2rem !important;
+  }
+  
+  .nav-link-custom {
+    font-size: 1.2rem !important;
+    margin: 5px 0 !important;
+    padding: 15px 20px !important;
+    text-align: center !important;
+    border: 2px solid rgba(255, 215, 0, 0.8) !important;
+    background: linear-gradient(45deg, rgba(255, 215, 0, 0.4), rgba(255, 255, 0, 0.3)) !important;
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.3) !important;
+  }
+  
+  .nav-link-custom:hover {
+    transform: scale(1.02) !important;
+    background: linear-gradient(45deg, rgba(255, 215, 0, 0.6), rgba(255, 255, 0, 0.5)) !important;
+  }
+  
+  /*
+  .logout-btn {
+    margin-top: 15px !important;
+    width: 100% !important;
+    padding: 12px 20px !important;
+    font-size: 1.1rem !important;
+  }
+  */
+  
+  .navbar-nav {
+    background: rgba(128, 0, 32, 0.95) !important;
+    backdrop-filter: blur(10px) !important;
+    border-radius: 15px !important;
+    padding: 15px !important;
+    margin-top: 10px !important;
+    border: 2px solid rgba(255, 215, 0, 0.5) !important;
+  }
+}
+
+/* Navbar Shadow Animation */
+.navbar {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Active page highlighting - Enhanced */
+.navbar-nav .nav-item .nav-link-custom[href*="profile/create"]:hover,
+.navbar-nav .nav-item .nav-link-custom[href*="matching/find"]:hover,
+.navbar-nav .nav-item .nav-link-custom[href*="profile/showall"]:hover,
+.navbar-nav .nav-item .nav-link-custom[href="/"]:hover {
+  background: linear-gradient(45deg, rgba(255, 215, 0, 0.6), rgba(255, 255, 0, 0.5)) !important;
+  border-color: rgba(255, 215, 0, 1) !important;
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.6) !important;
+}
+
+/* Special styling for important menu items */
+.nav-link-custom[href*="profile/create"],
+.nav-link-custom[href*="matching/find"],
+.nav-link-custom[href*="profile/showall"] {
+  font-weight: 800 !important;
+  background: linear-gradient(45deg, rgba(255, 215, 0, 0.4), rgba(255, 255, 0, 0.3)) !important;
+  border: 2px solid rgba(255, 215, 0, 0.7) !important;
+  box-shadow: 0 6px 18px rgba(255, 215, 0, 0.3) !important;
+}
+
+/* Glow effect for better visibility */
+.nav-link-custom {
+  animation: subtle-glow 3s ease-in-out infinite alternate !important;
+}
+
+@keyframes subtle-glow {
+  0% {
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2) !important;
+  }
+  100% {
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4) !important;
+  }
+}
+</style>
+
+<script>
+/* Logout Form JavaScript - Temporarily Commented Out
+document.getElementById('logoutForm')?.addEventListener('submit', async function(e) {
+  e.preventDefault();
+  try {
+    const res = await fetch('/api/auth/logout', { method: 'POST', credentials: 'same-origin' });
+    if (res.ok) {
+      window.location.href = '/login';
+    } else {
+      alert('Logout failed.');
+    }
+  } catch {
+    alert('Logout failed.');
+  }
+});
+*/
+
+// Add active class to current page
+document.addEventListener('DOMContentLoaded', function() {
+  const currentPath = window.location.pathname;
+  const navLinks = document.querySelectorAll('.nav-link-custom');
+  
+  navLinks.forEach(link => {
+    if (link.getAttribute('href') === currentPath) {
+      link.classList.add('active');
+    }
+  });
+});
+</script>

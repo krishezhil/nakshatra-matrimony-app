@@ -1,0 +1,60 @@
+		<link href="/css/theme.css" rel="stylesheet">
+<%- include('partials/navbar') %>
+<div class="container mt-4">
+	<!-- Future Use Label -->
+	<div class="alert alert-info text-center mb-4">
+		<h5 class="mb-0"><strong>🚧 This Page is Created for Future Use 🚧</strong></h5>
+		<small class="text-muted">Advanced search functionality will be implemented here</small>
+	</div>
+	
+	<h2 class="mb-4">Search Profiles</h2>
+	<form class="row g-3 bg-light p-4 rounded shadow-sm">
+		<!-- TODO: Add search fields -->
+		<div class="col-12">
+			<button type="submit" class="btn btn-outline-primary">Search</button>
+		</div>
+	</form>
+		<% if (profiles && profiles.length > 0) { %>
+		<table class="table table-bordered mt-4">
+			<thead>
+				<tr>
+					<th>Serial No</th>
+					<th>Name</th>
+					<th>Gender</th>
+					<th>Region</th>
+					<th>Age</th>
+					<th><i class="fas fa-moon me-1"></i>Rasi/Lagnam</th>
+				</tr>
+			</thead>
+			<tbody>
+				<% profiles.forEach(function(profile) { %>
+				<tr>
+					<td>
+						<% if (profile.serial_no) { %>
+							<span class="badge bg-primary">
+								<%= profile.serial_no %>
+							</span>
+						<% } else { %>
+							<span class="text-muted">-</span>
+						<% } %>
+					</td>
+					<td><%= profile.name %></td>
+					<td><%= profile.gender %></td>
+					<td><%= profile.region %></td>
+					<td><%= typeof profile.age !== 'undefined' ? profile.age : '' %></td>
+					<td>
+						<% if (profile.rasi_lagnam) { %>
+							<span class="badge bg-secondary text-white">
+								<%= profile.rasi_lagnam %>
+							</span>
+						<% } else { %>
+							<span class="text-muted">-</span>
+						<% } %>
+					</td>
+				</tr>
+				<% }); %>
+			</tbody>
+		</table>
+		<% } %>
+</div>
+<%- include('partials/footer') %>

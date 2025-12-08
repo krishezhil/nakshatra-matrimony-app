@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= typeof title !== 'undefined' ? title : 'Error' %> - Hindu Matrimony</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="/css/theme.css" rel="stylesheet">
+    <style>
+        .error-container {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .error-card {
+            max-width: 600px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .error-icon {
+            font-size: 4rem;
+            color: #dc3545;
+            margin-bottom: 1rem;
+        }
+        .error-title {
+            color: #495057;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .error-message {
+            color: #6c757d;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        .error-details {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+        .btn-home {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            border-radius: 25px;
+            padding: 10px 30px;
+            color: white;
+            text-decoration: none;
+            transition: transform 0.2s;
+        }
+        .btn-home:hover {
+            transform: translateY(-2px);
+            color: white;
+        }
+        .btn-back {
+            background: transparent;
+            border: 2px solid #6c757d;
+            border-radius: 25px;
+            padding: 8px 25px;
+            color: #6c757d;
+            text-decoration: none;
+            transition: all 0.2s;
+            margin-right: 10px;
+        }
+        .btn-back:hover {
+            background-color: #6c757d;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <%- include('./partials/navbar') %>
+    
+    <div class="container error-container">
+        <div class="card error-card">
+            <div class="card-body text-center p-5">
+                <div class="error-icon">
+                    <% if (typeof statusCode !== 'undefined' && statusCode === 404) { %>
+                        <i class="fas fa-search-minus"></i>
+                    <% } else if (typeof statusCode !== 'undefined' && statusCode === 429) { %>
+                        <i class="fas fa-clock"></i>
+                    <% } else if (typeof statusCode !== 'undefined' && statusCode >= 400 && statusCode < 500) { %>
+                        <i class="fas fa-exclamation-triangle"></i>
+                    <% } else { %>
+                        <i class="fas fa-exclamation-circle"></i>
+                    <% } %>
+                </div>
+                
+                <h1 class="error-title">
+                    <%= typeof title !== 'undefined' ? title : 'Oops! Something went wrong' %>
+                </h1>
+                
+                <div class="error-message">
+                    <% if (typeof message !== 'undefined' && message) { %>
+                        <p><%= message %></p>
+                    <% } else if (typeof error !== 'undefined' && error) { %>
+                        <p><%= error %></p>
+                    <% } else { %>
+                        <p>We encountered an unexpected error. Please try again later.</p>
+                    <% } %>
+                </div>
+                
+                <% if (typeof statusCode !== 'undefined' && statusCode === 404) { %>
+                    <p class="text-muted">The page you're looking for doesn't exist or has been moved.</p>
+                <% } else if (typeof statusCode !== 'undefined' && statusCode === 429) { %>
+                    <p class="text-muted">You've made too many requests. Please wait before trying again.</p>
+                    <% if (typeof retryAfter !== 'undefined') { %>
+                        <p class="text-muted"><strong>Try again after:</strong> <%= retryAfter %></p>
+                    <% } %>
+                <% } else if (typeof statusCode !== 'undefined' && statusCode >= 500) { %>
+                    <p class="text-muted">Our servers are experiencing some difficulties. Please try again in a few moments.</p>
+                <% } %>
+                
+                <div class="mt-4">
+                    <a href="javascript:history.back()" class="btn-back">
+                        <i class="fas fa-arrow-left"></i> Go Back
+                    </a>
+                    <a href="/" class="btn-home">
+                        <i class="fas fa-home"></i> Home Page
+                    </a>
+                </div>
+                
+                <% if (typeof details !== 'undefined' && Array.isArray(details) && details.length > 0) { %>
+                    <div class="error-details">
+                        <h6><i class="fas fa-info-circle"></i> Details:</h6>
+                        <ul class="list-unstyled mb-0">
+                            <% details.forEach(function(detail) { %>
+                                <li>
+                                    <strong><%= detail.field %>:</strong> <%= detail.message %>
+                                </li>
+                            <% }); %>
+                        </ul>
+                    </div>
+                <% } %>
+                
+                <% if (typeof errors !== 'undefined' && Array.isArray(errors) && errors.length > 0) { %>
+                    <div class="error-details">
+                        <h6><i class="fas fa-exclamation-triangle"></i> Validation Errors:</h6>
+                        <ul class="list-unstyled mb-0">
+                            <% errors.forEach(function(error) { %>
+                                <li>
+                                    <strong><%= error.field %>:</strong> <%= error.message %>
+                                </li>
+                            <% }); %>
+                        </ul>
+                    </div>
+                <% } %>
+                
+                <% if (process.env.NODE_ENV === 'development' && typeof stack !== 'undefined') { %>
+                    <div class="error-details mt-3">
+                        <h6><i class="fas fa-bug"></i> Stack Trace (Development Mode):</h6>
+                        <pre class="text-start" style="font-size: 0.8rem; white-space: pre-wrap;"><%= stack %></pre>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+    </div>
+    
+    <%- include('./partials/footer') %>
+    
+    <!-- Error data for JavaScript -->
+    <script type="application/json" id="error-data"><%- JSON.stringify({
+        statusCode: typeof statusCode !== 'undefined' ? statusCode : null,
+        title: typeof title !== 'undefined' ? title : 'Unknown Error',
+        retryAfter: typeof retryAfter !== 'undefined' ? retryAfter : null
+    }) %></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Load error data from JSON script tag
+        const errorDataElement = document.getElementById('error-data');
+        const errorData = errorDataElement ? JSON.parse(errorDataElement.textContent) : {};
+        
+        // Auto-redirect for rate limiting errors after showing the message
+        if (errorData.statusCode === 429 && errorData.retryAfter) {
+            if (errorData.retryAfter.includes('minute')) {
+                // Auto-refresh after the specified time for rate limit errors
+                const minutes = errorData.retryAfter.match(/\d+/);
+                if (minutes && minutes[0]) {
+                    const retrySeconds = parseInt(minutes[0]) * 60;
+                    setTimeout(function() {
+                        window.location.reload();
+                    }, retrySeconds * 1000);
+                    
+                    // Show countdown
+                    let countdown = retrySeconds;
+                    const countdownInterval = setInterval(function() {
+                        countdown--;
+                        if (countdown <= 0) {
+                            clearInterval(countdownInterval);
+                        }
+                    }, 1000);
+                }
+            }
+        }
+        
+        // Log client-side error for debugging
+        if (window.console && console.error) {
+            console.error('Error Page Rendered:', {
+                title: errorData.title,
+                statusCode: errorData.statusCode,
+                timestamp: new Date().toISOString()
+            });
+        }
+    </script>
+</body>
+</html>

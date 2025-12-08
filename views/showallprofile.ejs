@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>All Profiles - கந்த கோட்டம் சேவா சங்கம்</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;600;700&display=swap" rel="stylesheet">
+	<link href="/css/vendor/aos.css" rel="stylesheet">
+	<link href="/css/brand.css" rel="stylesheet">
+	<link href="/css/theme.css" rel="stylesheet">
+	
+	<style>
+        :root {
+            --brand-gold: #FFD700;
+            --brand-maroon: #800020;
+            --brand-light-gold: #FFFF00;
+            --brand-dark-maroon: #660019;
+        }
+
+        body {
+            font-family: 'Noto Sans Tamil', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+        }
+
+        .content-wrapper {
+            min-height: calc(100vh - 120px);
+            padding: 120px 0 80px;
+            position: relative;
+        }
+
+        .page-container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 20px auto;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            max-width: 1400px;
+        }
+
+        .page-title {
+            color: var(--brand-maroon);
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .page-title i {
+            color: var(--brand-gold);
+            font-size: 2rem;
+        }
+
+        .search-section {
+            background: rgba(255, 215, 0, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-title {
+            color: var(--brand-maroon);
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .search-title i {
+            color: var(--brand-gold);
+        }
+
+        .form-control, .form-select {
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            border-radius: 10px;
+            padding: 12px 15px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .form-control:focus, .form-select:focus {
+            border-color: var(--brand-gold);
+            box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.25);
+            background: rgba(255, 255, 255, 1);
+        }
+
+        .profiles-table-container {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+        }
+
+        .table {
+            margin-bottom: 0;
+        }
+
+        .table thead th {
+            background: linear-gradient(45deg, var(--brand-maroon), var(--brand-dark-maroon));
+            color: var(--brand-gold);
+            border: none;
+            font-weight: 600;
+            text-align: center;
+            vertical-align: middle;
+            padding: 15px 10px;
+        }
+
+        .table tbody tr {
+            transition: all 0.3s ease;
+        }
+
+        .table tbody tr:hover {
+            background-color: rgba(255, 215, 0, 0.1);
+            transform: translateY(-1px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .table tbody td {
+            vertical-align: middle;
+            padding: 12px 10px;
+            border-color: rgba(255, 215, 0, 0.2);
+        }
+
+        .floating-symbols {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .symbol {
+            position: absolute;
+            font-size: 4rem;
+            color: rgba(255, 215, 0, 0.1);
+            animation: float 20s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px) rotate(0deg);
+                opacity: 0.1;
+            }
+            50% {
+                transform: translateY(-30px) rotate(180deg);
+                opacity: 0.2;
+            }
+        }
+
+        .brand-btn {
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            color: #800020;
+            border: 3px solid #FFD700;
+            padding: 12px 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .brand-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(255, 215, 0, 0.6);
+            background: linear-gradient(45deg, #FFFF00, #FFD700);
+            color: #800020;
+            border-color: #FFFF00;
+            text-decoration: none;
+        }
+
+        .search-btn {
+            background: linear-gradient(135deg, #FF6B35, #FF8E53, #FFD700);
+            color: #800020;
+            border: 3px solid #FF6B35;
+            padding: 15px 20px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            border-radius: 30px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 10px 25px rgba(255, 107, 53, 0.4), 
+                        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: relative;
+            overflow: hidden;
+            min-width: 120px;
+        }
+
+        .search-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.5s;
+        }
+
+        .search-btn:hover::before {
+            left: 100%;
+        }
+        
+        .search-btn:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 20px 40px rgba(255, 107, 53, 0.6), 
+                        0 0 20px rgba(255, 215, 0, 0.4),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.4);
+            background: linear-gradient(135deg, #FF8E53, #FFD700, #FFFF00);
+            border-color: #FFD700;
+            color: #800020;
+            text-decoration: none;
+        }
+
+        .search-btn:active {
+            transform: translateY(-1px) scale(1.02);
+            transition: all 0.1s ease;
+        }
+
+        .search-btn i {
+            font-size: 1.2rem;
+            margin-right: 8px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        .btn-edit {
+            background: linear-gradient(45deg, #28a745, #20c997);
+            color: white;
+            border: 2px solid #28a745;
+            padding: 8px 15px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border-radius: 20px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-edit:hover {
+            background: linear-gradient(45deg, #20c997, #28a745);
+            color: white;
+            transform: translateY(-1px);
+            box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4);
+            text-decoration: none;
+        }
+
+        .alert {
+            border: none;
+            border-radius: 15px;
+            padding: 20px;
+            font-weight: 500;
+        }
+
+        .alert-info {
+            background: linear-gradient(45deg, rgba(13, 202, 240, 0.1), rgba(111, 66, 193, 0.1));
+            color: var(--brand-maroon);
+            border: 2px solid rgba(13, 202, 240, 0.3);
+        }
+
+        .alert-danger {
+            background: linear-gradient(45deg, rgba(220, 53, 69, 0.1), rgba(227, 28, 95, 0.1));
+            color: #721c24;
+            border: 2px solid rgba(220, 53, 69, 0.3);
+        }
+
+        /* ===== PAGINATION STYLES ===== */
+        .pagination-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 25px;
+            margin-top: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border: 2px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .pagination-info {
+            color: var(--brand-maroon);
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .pagination-info i {
+            color: var(--brand-gold);
+            font-size: 1.2rem;
+        }
+
+        .pagination-controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .pagination-btn {
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            color: #800020;
+            border: 2px solid #FFD700;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+            min-width: 45px;
+            height: 45px;
+        }
+
+        .pagination-btn:hover:not(.disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(255, 215, 0, 0.5);
+            background: linear-gradient(45deg, #FFFF00, #FFD700);
+            color: #800020;
+            text-decoration: none;
+        }
+
+        .pagination-btn.active {
+            background: linear-gradient(45deg, var(--brand-maroon), var(--brand-dark-maroon));
+            color: var(--brand-gold);
+            border-color: var(--brand-maroon);
+            box-shadow: 0 8px 20px rgba(128, 0, 32, 0.4);
+            transform: scale(1.1);
+            font-weight: 700;
+        }
+
+        .pagination-btn.disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            background: #e0e0e0;
+            color: #999;
+            border-color: #ccc;
+            box-shadow: none;
+        }
+
+        .pagination-btn i {
+            font-size: 1rem;
+        }
+
+        .pagination-ellipsis {
+            color: var(--brand-maroon);
+            font-weight: 600;
+            font-size: 1.2rem;
+            padding: 0 10px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 45px;
+        }
+
+        /* ===== PAGE SIZE SELECTOR ===== */
+        .page-size-selector {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 2px solid rgba(255, 215, 0, 0.2);
+        }
+
+        .page-size-label {
+            color: var(--brand-maroon);
+            font-weight: 600;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .page-size-label i {
+            color: var(--brand-gold);
+            font-size: 1.1rem;
+        }
+
+        .page-size-select {
+            background: linear-gradient(45deg, rgba(255, 215, 0, 0.1), rgba(255, 165, 0, 0.1));
+            border: 2px solid var(--brand-gold);
+            border-radius: 20px;
+            padding: 8px 35px 8px 15px;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--brand-maroon);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 10px rgba(255, 215, 0, 0.2);
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23800020' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 12px center;
+        }
+
+        .page-size-select:hover {
+            border-color: var(--brand-maroon);
+            background: linear-gradient(45deg, rgba(255, 255, 0, 0.15), rgba(255, 215, 0, 0.15));
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+            transform: translateY(-1px);
+        }
+
+        .page-size-select:focus {
+            outline: none;
+            border-color: var(--brand-maroon);
+            box-shadow: 0 0 0 3px rgba(128, 0, 32, 0.1);
+        }
+
+        .page-size-select option {
+            background: white;
+            color: var(--brand-maroon);
+            font-weight: 600;
+            padding: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .page-title {
+                font-size: 2rem;
+            }
+            .page-container {
+                padding: 20px;
+                margin: 10px;
+            }
+            .search-section {
+                padding: 20px;
+            }
+            .pagination-info {
+                font-size: 0.95rem;
+            }
+            .pagination-btn {
+                padding: 8px 15px;
+                font-size: 0.9rem;
+                min-width: 40px;
+                height: 40px;
+            }
+            .page-size-selector {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .page-size-label {
+                font-size: 0.9rem;
+            }
+            .page-size-select {
+                width: 100%;
+                max-width: 200px;
+            }
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100" style="background: url('/assets/background-image.jpg') no-repeat center center fixed; background-size: cover;">
+    <!-- Floating Hindu Symbols -->
+    <div class="floating-symbols">
+        <div class="symbol" style="top: 15%; left: 10%;">🪔</div>
+        <div class="symbol" style="top: 25%; right: 15%;">🪔</div>
+        <div class="symbol" style="top: 55%; left: 8%;">🪔</div>
+        <div class="symbol" style="top: 75%; right: 12%;">🪔</div>
+        <div class="symbol" style="top: 35%; left: 85%;">🪔</div>
+        <div class="symbol" style="top: 65%; left: 80%;">🪔</div>
+    </div>
+
+    <!-- Background Overlay -->
+    <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(128, 0, 32, 0.2) 100%); z-index: -1;"></div>
+
+    <%- include('partials/navbar') %>
+    
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="page-container" data-aos="fade-up" data-aos-duration="1000">
+                
+                <div class="page-title" data-aos="fade-down" data-aos-delay="200">
+                    <i class="fas fa-users"></i>All Profiles
+                </div>
+
+                <% if (typeof creationSuccess !== 'undefined' && creationSuccess) { %>
+                <div id="successAlert" class="alert alert-success alert-dismissible fade show" role="alert">
+                    <i class="fas fa-check-circle me-2"></i>
+                    <strong>Profile Successfully Created!</strong>
+                    Serial Number: <strong><%= creationSuccess.serialNumber %></strong>
+                    <% if (creationSuccess.profileName) { %>
+                        • Name: <strong><%= creationSuccess.profileName %></strong>
+                    <% } %>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <% } %>
+
+                <% if (typeof updateSuccess !== 'undefined' && updateSuccess) { %>
+                <div id="updateAlert" class="alert alert-info alert-dismissible fade show" role="alert">
+                    <i class="fas fa-sync-alt me-2"></i>
+                    <strong>Profile Successfully Updated!</strong>
+                    Serial Number: <strong><%= updateSuccess.serialNumber %></strong>
+                    <% if (updateSuccess.profileName) { %>
+                        • Name: <strong><%= updateSuccess.profileName %></strong>
+                    <% } %>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <% } %>
+
+                <div class="search-section" data-aos="fade-right" data-aos-delay="300">
+                    <div class="search-title">
+                        <i class="fas fa-search"></i>Search Profiles
+                    </div>
+                    <form class="row g-3 align-items-end" method="GET" action="">
+                        <div class="col-md-2">
+                            <label class="form-label">Serial No</label>
+                            <input type="text" class="form-control" name="serial_no" placeholder="Enter Serial No" value="<%= typeof query !== 'undefined' && query.serial_no ? query.serial_no : '' %>">
+                        </div>
+                        <div class="col-md-2">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control" name="name" placeholder="Enter Name" value="<%= typeof query !== 'undefined' && query.name ? query.name : '' %>">
+                        </div>
+                        <div class="col-md-2">
+                            <label class="form-label">Gender</label>
+                            <select class="form-select" name="gender">
+                                <option value="">Select Gender</option>
+                                <option value="Male" <%= typeof query !== 'undefined' && query.gender === 'Male' ? 'selected' : '' %>>Male</option>
+                                <option value="Female" <%= typeof query !== 'undefined' && query.gender === 'Female' ? 'selected' : '' %>>Female</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <label class="form-label">Birth Date</label>
+                            <input type="date" class="form-control" name="birth_date" value="<%= typeof query !== 'undefined' && query.birth_date ? query.birth_date : '' %>">
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label">Contact No</label>
+                            <input type="text" class="form-control" name="contact_no" placeholder="Enter Contact No" value="<%= typeof query !== 'undefined' && query.contact_no ? query.contact_no : '' %>">
+                        </div>
+                        <div class="col-md-1">
+                            <button type="submit" class="search-btn w-100">
+                                <i class="fas fa-search"></i>Search
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <% if (typeof error !== 'undefined') { %>
+                    <div class="alert alert-danger" data-aos="fade-up" data-aos-delay="400">
+                        <i class="fas fa-exclamation-triangle me-2"></i><%= error %>
+                    </div>
+                <% } %>
+                
+                <% if (profiles && profiles.length > 0) { %>
+                    <div class="profiles-table-container" data-aos="fade-up" data-aos-delay="500">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th><i class="fas fa-hashtag me-1"></i>Serial No</th>
+                                        <th><i class="fas fa-user me-1"></i>Name</th>
+                                        <th><i class="fas fa-graduation-cap me-1"></i>Qualification</th>
+                                        <th><i class="fas fa-map-marker-alt me-1"></i>Region</th>
+                                        <th><i class="fas fa-moon me-1"></i>Rasi/Lagnam</th>
+                                        <th><i class="fas fa-venus-mars me-1"></i>Gender</th>
+                                        <th><i class="fas fa-calendar me-1"></i>Birth Date</th>
+                                        <th><i class="fas fa-clock me-1"></i>Age</th>
+                                        <th><i class="fas fa-phone me-1"></i>Contact</th>
+                                        <th><i class="fas fa-cogs me-1"></i>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% profiles.forEach(function(profile) { %>
+                                        <tr>
+                                            <td class="fw-bold text-primary">
+                                                <% if (profile.serial_no) { %>
+                                                    <span class="badge bg-primary">
+                                                        <%= profile.serial_no %>
+                                                    </span>
+                                                <% } else { %>
+                                                    <span class="text-muted">-</span>
+                                                <% } %>
+                                            </td>
+                                            <td class="fw-semibold"><%= profile.name %></td>
+                                            <td><%= profile.qualification %></td>
+                                            <td><%= profile.region %></td>
+                                            <td>
+                                                <% if (profile.rasi_lagnam) { %>
+                                                    <span class="badge bg-secondary text-white">
+                                                        <%= profile.rasi_lagnam %>
+                                                    </span>
+                                                <% } else { %>
+                                                    <span class="text-muted">-</span>
+                                                <% } %>
+                                            </td>
+                                            <td>
+                                                <% if (profile.gender === 'Male') { %>
+                                                    <span class="badge bg-primary"><i class="fas fa-mars me-1"></i>Male</span>
+                                                <% } else { %>
+                                                    <span class="badge bg-info"><i class="fas fa-venus me-1"></i>Female</span>
+                                                <% } %>
+                                            </td>
+                                            <td><%= profile.birth_date %></td>
+                                            <td class="fw-semibold"><%= typeof profile.age !== 'undefined' ? profile.age : '' %></td>
+                                            <td><%= profile.contact_no %></td>
+                                            <td>
+                                                <a href="/profile/update/<%= profile.id %>" class="btn-edit">
+                                                    <i class="fas fa-edit"></i>Edit
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    <% }); %>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- ===== PAGINATION CONTROLS ===== -->
+                    <% 
+                    // Helper function to build pagination URLs with preserved query parameters
+                    function buildPaginationUrl(pageNum) {
+                        const params = new URLSearchParams();
+                        
+                        // Add all existing query params except page, created, updated, sno, pname
+                        if (typeof query !== 'undefined') {
+                            Object.keys(query).forEach(key => {
+                                if (key !== 'page' && key !== 'created' && key !== 'updated' && key !== 'sno' && key !== 'pname' && query[key]) {
+                                    params.append(key, query[key]);
+                                }
+                            });
+                        }
+                        
+                        // Add the new page number
+                        params.set('page', pageNum);
+                        
+                        return '?' + params.toString();
+                    }
+                    %>
+                    
+                    <% if (typeof pagination !== 'undefined' && pagination.totalPages > 0) { %>
+                        <div class="pagination-container" data-aos="fade-up" data-aos-delay="600">
+                            <!-- Pagination Info -->
+                            <div class="pagination-info">
+                                <i class="fas fa-info-circle"></i>
+                                <span>
+                                    Showing 
+                                    <strong><%= pagination.startIndex %></strong> to 
+                                    <strong><%= pagination.endIndex %></strong> of 
+                                    <strong><%= pagination.totalProfiles %></strong> profiles
+                                </span>
+                            </div>
+
+                            <!-- Pagination Controls -->
+                            <% if (pagination.totalPages > 1) { %>
+                                <div class="pagination-controls">
+                                    <!-- Previous Button -->
+                                    <% if (pagination.hasPrevPage) { %>
+                                        <a href="<%= buildPaginationUrl(pagination.prevPage) %>" class="pagination-btn" title="Previous Page">
+                                            <i class="fas fa-chevron-left"></i>
+                                        </a>
+                                    <% } else { %>
+                                        <span class="pagination-btn disabled" title="No Previous Page">
+                                            <i class="fas fa-chevron-left"></i>
+                                        </span>
+                                    <% } %>
+
+                                    <!-- First Page (if not in range) -->
+                                    <% if (pagination.pageRange.length > 0 && pagination.pageRange[0] > 1) { %>
+                                        <a href="<%= buildPaginationUrl(1) %>" class="pagination-btn" title="Page 1">1</a>
+                                        <% if (pagination.pageRange[0] > 2) { %>
+                                            <span class="pagination-ellipsis">...</span>
+                                        <% } %>
+                                    <% } %>
+
+                                    <!-- Page Numbers -->
+                                    <% pagination.pageRange.forEach(function(pageNum) { %>
+                                        <% if (pageNum === pagination.currentPage) { %>
+                                            <span class="pagination-btn active" title="Current Page">
+                                                <%= pageNum %>
+                                            </span>
+                                        <% } else { %>
+                                            <a href="<%= buildPaginationUrl(pageNum) %>" class="pagination-btn" title="Page <%= pageNum %>">
+                                                <%= pageNum %>
+                                            </a>
+                                        <% } %>
+                                    <% }); %>
+
+                                    <!-- Last Page (if not in range) -->
+                                    <% if (pagination.pageRange.length > 0 && pagination.pageRange[pagination.pageRange.length - 1] < pagination.totalPages) { %>
+                                        <% if (pagination.pageRange[pagination.pageRange.length - 1] < pagination.totalPages - 1) { %>
+                                            <span class="pagination-ellipsis">...</span>
+                                        <% } %>
+                                        <a href="<%= buildPaginationUrl(pagination.totalPages) %>" class="pagination-btn" title="Last Page">
+                                            <%= pagination.totalPages %>
+                                        </a>
+                                    <% } %>
+
+                                    <!-- Next Button -->
+                                    <% if (pagination.hasNextPage) { %>
+                                        <a href="<%= buildPaginationUrl(pagination.nextPage) %>" class="pagination-btn" title="Next Page">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </a>
+                                    <% } else { %>
+                                        <span class="pagination-btn disabled" title="No Next Page">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </span>
+                                    <% } %>
+                                </div>
+                            <% } %>
+
+                            <!-- ===== PAGE SIZE SELECTOR ===== -->
+                            <div class="page-size-selector">
+                                <label class="page-size-label" for="pageSizeSelect">
+                                    <i class="fas fa-list"></i>
+                                    <span>Items per page:</span>
+                                </label>
+                                <select id="pageSizeSelect" class="page-size-select" onchange="changePageSize(this.value)">
+                                    <option value="10" <%= pagination.limit === 10 ? 'selected' : '' %>>10</option>
+                                    <option value="25" <%= pagination.limit === 25 ? 'selected' : '' %>>25</option>
+                                    <option value="50" <%= pagination.limit === 50 ? 'selected' : '' %>>50</option>
+                                    <option value="100" <%= pagination.limit === 100 ? 'selected' : '' %>>100</option>
+                                </select>
+                            </div>
+                        </div>
+                    <% } %>
+                <% } else { %>
+                    <div class="alert alert-info text-center" data-aos="fade-up" data-aos-delay="400">
+                        <i class="fas fa-info-circle me-2" style="font-size: 1.5rem;"></i>
+                        <h5 class="mb-2">No profiles found</h5>
+                        <p class="mb-0">Try adjusting your search criteria or <a href="/profile/create" class="text-decoration-none">create a new profile</a>.</p>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+    </div>
+    
+    <%- include('partials/footer') %>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/vendor/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 50
+        });
+
+        // ===== PAGINATION URL BUILDER =====
+        // Helper function to build pagination URLs while preserving query parameters
+        function buildPaginationUrl(pageNum) {
+            const currentUrl = new URL(window.location.href);
+            currentUrl.searchParams.set('page', pageNum);
+            // Remove success alert params if present
+            currentUrl.searchParams.delete('created');
+            currentUrl.searchParams.delete('updated');
+            currentUrl.searchParams.delete('sno');
+            currentUrl.searchParams.delete('pname');
+            return currentUrl.pathname + currentUrl.search;
+        }
+
+        // ===== PAGE SIZE CHANGE HANDLER =====
+        // Handle page size selector change
+        function changePageSize(newLimit) {
+            const currentUrl = new URL(window.location.href);
+            
+            // Set new limit
+            currentUrl.searchParams.set('limit', newLimit);
+            
+            // Reset to page 1 when changing page size
+            currentUrl.searchParams.set('page', '1');
+            
+            // Remove success alert params if present
+            currentUrl.searchParams.delete('created');
+            currentUrl.searchParams.delete('updated');
+            currentUrl.searchParams.delete('sno');
+            currentUrl.searchParams.delete('pname');
+            
+            // Navigate to new URL
+            window.location.href = currentUrl.toString();
+        }
+    </script>
+    
+    <% if (typeof creationSuccess !== 'undefined' && creationSuccess) { %>
+    <script>
+    (function() {
+        const alert = document.getElementById('successAlert');
+        if (!alert) return;
+        
+        // Auto-dismiss after 5 seconds
+        setTimeout(() => {
+            const bsAlert = bootstrap.Alert.getOrCreateInstance(alert);
+            bsAlert.close();
+            
+            // Clean up URL parameters after alert closes
+            setTimeout(() => {
+                const currentUrl = new URL(window.location.href);
+                currentUrl.searchParams.delete('created');
+                currentUrl.searchParams.delete('sno');
+                currentUrl.searchParams.delete('pname');
+                window.history.replaceState(null, '', currentUrl.toString());
+            }, 300);
+        }, 5000);
+    })();
+    </script>
+    <% } %>
+
+    <% if (typeof updateSuccess !== 'undefined' && updateSuccess) { %>
+    <script>
+    (function() {
+        const alert = document.getElementById('updateAlert');
+        if (!alert) return;
+        
+        // Auto-dismiss after 5 seconds
+        setTimeout(() => {
+            const bsAlert = bootstrap.Alert.getOrCreateInstance(alert);
+            bsAlert.close();
+            
+            // Clean up URL parameters after alert closes
+            setTimeout(() => {
+                const currentUrl = new URL(window.location.href);
+                currentUrl.searchParams.delete('updated');
+                currentUrl.searchParams.delete('sno');
+                currentUrl.searchParams.delete('pname');
+                window.history.replaceState(null, '', currentUrl.toString());
+            }, 300);
+        }, 5000);
+    })();
+    </script>
+    <% } %>
+</body>
+</html>

@@ -1,0 +1,85 @@
+{
+  "name": "nakshatra-matrimony-app",
+  "version": "1.0.7",
+  "description": "Hindu Matrimony Desktop Application with Nakshatra-based compatibility matching system",
+  "main": "index.js",
+  "author": {
+    "name": "Matrimony Development Team"
+  },
+  "keywords": [
+    "matrimony",
+    "nakshatra",
+    "astrology",
+    "compatibility",
+    "matching",
+    "hindu",
+    "desktop-app",
+    "electron",
+    "node.js"
+  ],
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/nakshatra-matrimony-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/nakshatra-matrimony-app/issues"
+  },
+  "homepage": "https://github.com/your-username/nakshatra-matrimony-app#readme",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "build:exe": "pkg . --targets node18-win-x64 --output dist/NakshatraMatrimony.exe",
+    "build:all": "pkg . --output dist/NakshatraMatrimony",
+    "build:mac": "pkg . --targets node18-macos-x64 --output dist/NakshatraMatrimony-mac",
+    "build:linux": "pkg . --targets node18-linux-x64 --output dist/NakshatraMatrimony-linux",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "audit": "npm audit --audit-level moderate"
+  },
+  "bin": "index.js",
+  "pkg": {
+    "assets": [
+      "views/**/*",
+      "public/**/*",
+      "data/**/*",
+      ".env.example",
+      "node_modules/fflate/**/*"
+    ],
+    "scripts": [
+      "index.js"
+    ],
+    "targets": [
+      "node18-win-x64",
+      "node18-macos-x64",
+      "node18-linux-x64"
+    ],
+    "options": [
+      "--no-warnings"
+    ]
+  },
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "dompurify": "^3.2.6",
+    "dotenv": "^17.2.2",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "express-validator": "^7.2.1",
+    "extract-zip": "^2.0.1",
+    "helmet": "^8.1.0",
+    "multer": "^2.0.2",
+    "open": "^8.4.2",
+    "pdf-lib": "^1.17.1",
+    "winston": "^3.11.0",
+    "winston-daily-rotate-file": "^4.7.1",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10",
+    "pkg": "^5.8.1"
+  }
+}

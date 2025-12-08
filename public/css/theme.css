@@ -1,0 +1,23 @@
+body, .bg-light {
+  background-color: #fffbe6 !important;
+}
+.navbar, .table-primary, .btn-primary, .btn-outline-primary {
+  background-color: #ffe066 !important;
+  border-color: #ffe066 !important;
+  color: #6d4c00 !important;
+}
+.navbar .navbar-brand, .navbar .nav-link, .btn-primary, .btn-outline-primary {
+  color: #6d4c00 !important;
+}
+.btn-primary:hover, .btn-outline-primary:hover {
+  background-color: #ffe699 !important;
+  border-color: #ffe699 !important;
+  color: #6d4c00 !important;
+}
+.footer, .alert-warning {
+  background-color: #fff3cd !important;
+  color: #6d4c00 !important;
+}
+.shadow-sm {
+  box-shadow: 0 .125rem .25rem rgba(109,76,0,.075)!important;
+}

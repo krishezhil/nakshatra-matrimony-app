@@ -1,0 +1,380 @@
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+                <script src="/js/vendor/jquery.min.js"></script>
+                <script src="/js/vendor/select2.min.js"></script>
+                <script src="/js/vendor/aos.js"></script>
+                <script>
+                    // Initialize AOS animations after DOM is ready
+                    document.addEventListener('DOMContentLoaded', function() {
+                        AOS.init({
+                            duration: 800,
+                            once: true,
+                            offset: 100
+                        });
+                    });
+                </script>
+                
+                <!-- Phase 3: Select2 UX Enhancement Initialization -->
+                <script>
+                    // Ensure jQuery is available and handle potential conflicts
+                    (function($) {
+                        $(document).ready(function() {
+                        // Initialize Select2 for regions dropdown with enhanced UX and error handling
+                        try {
+                            $('#regions').select2({
+                                placeholder: {
+                                    id: '',
+                                    text: 'Choose regions to filter...'
+                                },
+                                allowClear: true,
+                                closeOnSelect: false,
+                                width: '100%',
+                                theme: 'default',
+                                language: {
+                                    noResults: function() {
+                                        return '<span style="color: #800020;"><i class="fas fa-search me-1"></i>No regions found</span>';
+                                    },
+                                    searching: function() {
+                                        return '<span style="color: #800020;"><i class="fas fa-spinner fa-spin me-1"></i>Searching regions...</span>';
+                                    }
+                                },
+                                escapeMarkup: function(markup) {
+                                    return markup;
+                                }
+                            });
+                        } catch (error) {
+                            console.warn('Select2 initialization failed, falling back to native multi-select:', error);
+                            // Graceful degradation - native multi-select will still work
+                        }
+                        
+                        // Enhance the Select2 container with brand styling
+                        $('.select2-container').addClass('select2-container--enhanced');
+                        
+                        // Add event listener to maintain form functionality
+                        $('#regions').on('select2:select select2:unselect', function(e) {
+                            // Trigger change event for any existing form handlers
+                            $(this).trigger('change');
+                            
+                            // Visual feedback when selection changes
+                            const container = $('.select2-container--enhanced');
+                            container.addClass('select2-selection-changed');
+                            setTimeout(function() {
+                                container.removeClass('select2-selection-changed');
+                            }, 300);
+                        });
+                        
+                        // Enhanced form submission handling with proper value preservation
+                        $('form').on('submit', function(e) {
+                            // Ensure Select2 values are properly submitted before disabling
+                            const regionsSelect = $('#regions');
+                            if (regionsSelect.hasClass('select2-hidden-accessible')) {
+                                // Force Select2 to sync values to the original select element
+                                regionsSelect.trigger('change.select2');
+                            }
+                            
+                            // Add loading state to the form (don't disable fields to preserve form data)
+                            const submitButton = $('button[type="submit"]');
+                            if (submitButton.length) {
+                                const originalText = submitButton.html();
+                                submitButton.prop('disabled', true)
+                                    .html('<i class="fas fa-spinner fa-spin me-2"></i>Searching...')
+                                    .data('original-text', originalText);
+                            }
+                            
+                            // Set timeout to re-enable if form submission fails
+                            setTimeout(function() {
+                                if (submitButton.length && submitButton.prop('disabled')) {
+                                    submitButton.prop('disabled', false)
+                                        .html(submitButton.data('original-text') || 'Search');
+                                }
+                            }, 10000);
+                        });
+                        
+                        // Add keyboard shortcuts for better accessibility with namespace for cleanup
+                        $(document).on('keydown.select2-regions', function(e) {
+                            // Alt + R to focus on regions dropdown
+                            if (e.altKey && e.keyCode === 82) {
+                                e.preventDefault();
+                                if ($('#regions').hasClass('select2-hidden-accessible')) {
+                                    // Select2 is initialized, open it
+                                    $('#regions').select2('open');
+                                } else {
+                                    // Fallback to native focus for accessibility
+                                    $('#regions').focus();
+                                }
+                            }
+                        });
+                        
+                        // Initialize Select2 for nakshatra preferences dropdown with enhanced UX and error handling
+                        try {
+                            $('#nakshatraPreferences').select2({
+                                placeholder: {
+                                    id: '',
+                                    text: 'Choose preferred nakshatras...'
+                                },
+                                allowClear: true,
+                                closeOnSelect: false,
+                                width: '100%',
+                                theme: 'default',
+                                language: {
+                                    noResults: function() {
+                                        return '<span style="color: #800020;"><i class="fas fa-search me-1"></i>No nakshatras found</span>';
+                                    },
+                                    searching: function() {
+                                        return '<span style="color: #800020;"><i class="fas fa-spinner fa-spin me-1"></i>Searching nakshatras...</span>';
+                                    }
+                                },
+                                escapeMarkup: function(markup) {
+                                    return markup;
+                                }
+                            });
+                            console.log('Nakshatra preferences Select2 initialized successfully');
+                        } catch (error) {
+                            console.warn('Failed to initialize nakshatra preferences Select2:', error);
+                        }
+                        
+                        // Handle nakshatra preferences selection changes with enhanced feedback
+                        $('#nakshatraPreferences').on('select2:select select2:unselect', function(e) {
+                            var selectedNakshatras = $(this).val();
+                            if (selectedNakshatras && selectedNakshatras.length > 0) {
+                                console.log('Nakshatra preferences selected:', selectedNakshatras.length, 'nakshatras');
+                            } else {
+                                console.log('All nakshatra preferences cleared - will search all nakshatras');
+                            }
+                        });
+                        
+                        // Add keyboard shortcut for nakshatra preferences (Ctrl+Shift+N)
+                        $(document).on('keydown.select2-nakshatras', function(e) {
+                            // Ctrl+Shift+N opens nakshatra preferences dropdown
+                            if (e.ctrlKey && e.shiftKey && e.key === 'N') {
+                                e.preventDefault();
+                                if ($('#nakshatraPreferences').hasClass('select2-hidden-accessible')) {
+                                    console.log('Opening nakshatra preferences with keyboard shortcut');
+                                    $('#nakshatraPreferences').select2('open');
+                                } else {
+                                    // Fallback to native focus for accessibility
+                                    $('#nakshatraPreferences').focus();
+                                }
+                            }
+                        });
+
+                        // Cleanup event listeners when page unloads (prevent memory leaks)
+                        $(window).on('beforeunload', function() {
+                            $(document).off('keydown.select2-regions');
+                            $(document).off('keydown.select2-nakshatras');
+                            if ($('#regions').hasClass('select2-hidden-accessible')) {
+                                $('#regions').select2('destroy');
+                            }
+                            if ($('#nakshatraPreferences').hasClass('select2-hidden-accessible')) {
+                                $('#nakshatraPreferences').select2('destroy');
+                            }
+                        });
+                        
+                        // Show keyboard shortcut hint on first visit with enhanced UX (with expiry)
+                        const hintKey = 'regions-shortcut-shown';
+                        const hintExpiry = 'regions-shortcut-expiry';
+                        const now = Date.now();
+                        const expiryTime = localStorage.getItem(hintExpiry);
+                        
+                        // Clear expired entries (30 days expiry)
+                        if (expiryTime && now > parseInt(expiryTime)) {
+                            localStorage.removeItem(hintKey);
+                            localStorage.removeItem(hintExpiry);
+                        }
+                        
+                        if (!localStorage.getItem(hintKey)) {
+                            setTimeout(function() {
+                                // Create device-appropriate hint message
+                                const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+                                const hintText = isMobile 
+                                    ? '<i class="fas fa-touch me-1 text-warning"></i><strong>Pro Tip:</strong> Tap the regions field to open the enhanced multi-select!'
+                                    : '<i class="fas fa-keyboard me-1 text-warning"></i><strong>Pro Tip:</strong> Press <kbd style="background: linear-gradient(45deg, #FFD700, #FFFF00); color: #800020; border: 1px solid #FFD700;">Alt + R</kbd> to quickly open regions filter!';
+                                    
+                                const hint = $('<div class="alert alert-info alert-dismissible fade show mt-2" role="alert" style="animation: slideInDown 0.5s ease-out;">')
+                                    .html(hintText + ' <button type="button" class="btn-close" data-bs-dismiss="alert"></button>');
+                                $('#regions').parent().append(hint);
+                                localStorage.setItem(hintKey, 'true');
+                                localStorage.setItem(hintExpiry, (now + 30 * 24 * 60 * 60 * 1000).toString()); // 30 days
+                                
+                                // Add subtle pulse animation to the keyboard icon
+                                hint.find('.fa-keyboard').css('animation', 'pulse 2s infinite');
+                                
+                                // Auto-hide after 10 seconds with fade out
+                                setTimeout(function() {
+                                    hint.fadeOut(500, function() {
+                                        $(this).alert('close');
+                                    });
+                                }, 10000);
+                            }, 2000);
+                        }
+                        });
+                    })(jQuery);
+                </script>
+                
+                <!-- Find Matching App: Main application module -->
+                <script nomodule>
+                    console.warn('ES6 modules not supported. Please use a modern browser.');
+                </script>
+                
+                <!-- Fallback script for search mode functionality -->
+                <script>
+                    // Critical fallback to ensure nakshatra mode works even if modules fail
+                    document.addEventListener('DOMContentLoaded', function() {
+                        console.log('Fallback script initialized');
+                        
+                        const searchModeButtons = document.querySelectorAll('input[name="searchMode"]');
+                        const gothramSection = document.getElementById('nakshatraGothramSection');
+                        const rasiField = document.querySelector('select[name="seekerRasi"]');
+                        const rasiRow = document.getElementById('nakshatraRasiRow');
+                        
+                        function updateFieldVisibility() {
+                            const selectedMode = document.querySelector('input[name="searchMode"]:checked')?.value;
+                            console.log('Search mode changed to:', selectedMode);
+                            
+                            if (selectedMode === 'nakshatra') {
+                                // Show gothram field
+                                if (gothramSection) {
+                                    gothramSection.classList.remove('d-none');
+                                    console.log('Gothram field shown for nakshatra mode');
+                                }
+                                
+                                // Make rasi field required and visible
+                                if (rasiField && rasiRow) {
+                                    rasiField.required = true;
+                                    rasiRow.style.display = 'flex'; // Show the row containing rasi field
+                                    
+                                    // Set default to Suth if no value is selected
+                                    if (!rasiField.value || rasiField.value === '') {
+                                        rasiField.value = 'Suth';
+                                        console.log('Set default Rasi to Suth for nakshatra mode');
+                                    }
+                                    
+                                    console.log('Rasi field and row shown for nakshatra mode, current value:', rasiField.value);
+                                }
+                            } else {
+                                // Hide gothram field
+                                if (gothramSection) {
+                                    gothramSection.classList.add('d-none');
+                                    console.log('Gothram field hidden for serial mode');
+                                }
+                                
+                                // Make rasi field optional and hide row
+                                if (rasiField && rasiRow) {
+                                    rasiField.required = false;
+                                    rasiRow.style.display = 'none'; // Hide the entire row
+                                    console.log('Rasi field and row hidden for serial mode');
+                                }
+                            }
+                        }
+                        
+                        // Apply initial state
+                        updateFieldVisibility();
+                        
+                        // Listen for mode changes
+                        searchModeButtons.forEach(button => {
+                            button.addEventListener('change', updateFieldVisibility);
+                        });
+                        
+                        console.log('Fallback search mode handler initialized');
+                    });
+                </script>
+                
+                <script type="module" src="/js/pages/find-matching/find-matching-app.js"></script>
+                
+                <!-- Generate JavaScript data safely outside script tags -->
+                <script type="application/json" id="matching-profiles-data">
+<% if (profiles && Array.isArray(profiles) && profiles.length > 0) { %><%- JSON.stringify(profiles) %><% } else { %>[]<% } %>
+                </script>
+
+                <!-- Generate seeker info data safely outside script tags -->
+                <script type="application/json" id="seeker-info-data">
+<% if (typeof seekerProfile !== 'undefined' && seekerProfile) { %>
+{
+    "name": <%- JSON.stringify(seekerProfile.name || "Profile Seeker") %>,
+    "serialNo": <%- JSON.stringify(seekerProfile.serial_no || seekerProfile.id || (typeof form !== 'undefined' ? form.serial_no : null) || "N/A") %>,
+    "gender": <%- JSON.stringify(seekerProfile.gender || (typeof form !== 'undefined' ? form.gender : null) || "") %>,
+    "nakshatraid": <%- JSON.stringify(seekerProfile.nakshatraid || (typeof form !== 'undefined' ? form.nakshatraid : null) || "") %>,
+    "age": <%- JSON.stringify(seekerProfile.extractedAge || seekerProfile.age || (typeof form !== 'undefined' ? form.seeker_age : null) || "") %>
+}
+<% } else { %>
+{
+    "name": "Profile Seeker",
+    "serialNo": <%- JSON.stringify((typeof form !== 'undefined' ? form.serial_no : null) || "N/A") %>,
+    "gender": <%- JSON.stringify((typeof form !== 'undefined' ? form.gender : null) || "") %>,
+    "nakshatraid": <%- JSON.stringify((typeof form !== 'undefined' ? form.nakshatraid : null) || "") %>,
+    "age": <%- JSON.stringify((typeof form !== 'undefined' ? form.seeker_age : null) || "") %>
+}
+<% } %>
+                </script>
+
+                <!-- Initialize window data for WhatsApp modal functionality -->
+                <script>
+                    // Set seeker info from JSON data (Required for WhatsApp modal)
+                    window.seekerInfo = JSON.parse(document.getElementById('seeker-info-data').textContent);
+                    
+                    // Set matching profiles data (Required for WhatsApp modal)
+                    window.matchingProfiles = JSON.parse(document.getElementById('matching-profiles-data').textContent);
+                </script>
+
+                <!-- Porutham Transformation Script -->
+                <script>
+                    // Use external utility if available, otherwise define fallback
+                    if (typeof window.PoruthamFormatter === 'undefined') {
+                        // Inline transformation function as fallback with configuration
+                        const PORUTHAM_CONFIG = {
+                            displayFormat: 'full', // Change to 'short' for short names
+                            formats: {
+                                short: { mathimam: "M", uthamam: "U" },
+                                full: { mathimam: "Mathimam", uthamam: "Uthamam" }
+                            }
+                        };
+                        
+                        function transformPorutham(value, format) {
+                            if (value === null || value === undefined || value === '') {
+                                return value;
+                            }
+                            const numValue = parseFloat(value);
+                            if (isNaN(numValue)) {
+                                return value;
+                            }
+                            
+                            const useFormat = format || PORUTHAM_CONFIG.displayFormat;
+                            
+                            if (numValue === 4) {
+                                return formatConfig.mathimam;
+                            } else if (numValue === 11) {
+                                return formatConfig.uthamam;
+                            } else {
+                                return value;
+                            }
+                        }
+                    }
+
+                    document.addEventListener('DOMContentLoaded', function() {
+                        // Use window.PoruthamFormatter if available, otherwise use inline function
+                        const transformFunc = (window.PoruthamFormatter && window.PoruthamFormatter.transformPorutham) ? 
+                                             window.PoruthamFormatter.transformPorutham : 
+                                             (typeof transformPorutham !== 'undefined' ? transformPorutham : function(v) { return v; });
+                        
+                        // Find all porutham badges and transform their display values
+                        const poruthambadges = document.querySelectorAll('[data-original-porutham]');
+                        
+                        poruthambadges.forEach(function(badge) {
+                            const originalValue = badge.getAttribute('data-original-porutham');
+                            if (originalValue) {
+                                const transformedValue = transformFunc(originalValue);
+                                badge.textContent = transformedValue;
+                            }
+                        });
+                    });
+                    
+                    // Initialize Bootstrap tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+                    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                        return new bootstrap.Tooltip(tooltipTriggerEl);
+                    });
+                </script>
+
+                <!-- Gothram Dropdown Handler for Nakshatra Mode -->
+                <script src="/js/gothram-dropdown.js"></script>
+
+                <!-- Find Matching App: All JavaScript functions successfully consolidated into single module -->

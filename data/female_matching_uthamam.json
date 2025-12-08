@@ -1,0 +1,5366 @@
+[
+  {
+    "male_nakshatra_id": 1,
+    "matching": [
+      {
+        "female_nakshatra_id": 1,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 2,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 3,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 4,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 5,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 6,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 7,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 8,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 9,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 10,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 11,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 12,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 13,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 14,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 15,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 16,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 17,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 18,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 19,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 20,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 21,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 22,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 23,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 24,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 25,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 26,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 27,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 28,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 29,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 30,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 31,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 32,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 33,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 34,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 35,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 36,
+        "value": 0
+      }
+    ]
+  },
+  {
+    "male_nakshatra_id": 2,
+    "matching": [
+      {
+        "female_nakshatra_id": 1,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 2,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 3,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 4,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 5,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 6,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 7,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 8,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 9,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 10,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 11,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 12,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 13,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 14,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 15,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 16,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 17,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 18,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 19,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 20,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 21,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 22,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 23,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 24,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 25,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 26,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 27,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 28,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 29,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 30,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 31,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 32,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 33,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 34,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 35,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 36,
+        "value": 0
+      }
+    ]
+  },
+  {
+    "male_nakshatra_id": 3,
+    "matching": [
+      {
+        "female_nakshatra_id": 1,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 2,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 3,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 4,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 5,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 6,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 7,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 8,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 9,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 10,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 11,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 12,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 13,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 14,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 15,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 16,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 17,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 18,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 19,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 20,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 21,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 22,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 23,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 24,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 25,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 26,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 27,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 28,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 29,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 30,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 31,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 32,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 33,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 34,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 35,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 36,
+        "value": 7
+      }
+    ]
+  },
+  {
+    "male_nakshatra_id": 4,
+    "matching": [
+      {
+        "female_nakshatra_id": 1,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 2,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 3,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 4,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 5,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 6,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 7,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 8,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 9,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 10,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 11,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 12,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 13,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 14,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 15,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 16,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 17,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 18,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 19,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 20,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 21,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 22,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 23,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 24,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 25,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 26,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 27,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 28,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 29,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 30,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 31,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 32,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 33,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 34,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 35,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 36,
+        "value": 6
+      }
+    ]
+  },
+  {
+    "male_nakshatra_id": 5,
+    "matching": [
+      {
+        "female_nakshatra_id": 1,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 2,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 3,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 4,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 5,
+        "value": 11
+      },
+      {
+        "female_nakshatra_id": 6,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 7,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 8,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 9,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 10,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 11,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 12,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 13,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 14,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 15,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 16,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 17,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 18,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 19,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 20,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 21,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 22,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 23,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 24,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 25,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 26,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 27,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 28,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 29,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 30,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 31,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 32,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 33,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 34,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 35,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 36,
+        "value": 0
+      }
+    ]
+  },
+  {
+    "male_nakshatra_id": 6,
+    "matching": [
+      {
+        "female_nakshatra_id": 1,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 2,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 3,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 4,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 5,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 6,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 7,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 8,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 9,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 10,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 11,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 12,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 13,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 14,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 15,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 16,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 17,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 18,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 19,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 20,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 21,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 22,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 23,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 24,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 25,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 26,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 27,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 28,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 29,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 30,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 31,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 32,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 33,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 34,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 35,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 36,
+        "value": 0
+      }
+    ]
+  },
+  {
+    "male_nakshatra_id": 7,
+    "matching": [
+      {
+        "female_nakshatra_id": 1,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 2,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 3,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 4,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 5,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 6,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 7,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 8,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 9,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 10,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 11,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 12,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 13,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 14,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 15,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 16,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 17,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 18,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 19,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 20,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 21,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 22,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 23,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 24,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 25,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 26,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 27,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 28,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 29,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 30,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 31,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 32,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 33,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 34,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 35,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 36,
+        "value": 0
+      }
+    ]
+  },
+  {
+    "male_nakshatra_id": 8,
+    "matching": [
+      {
+        "female_nakshatra_id": 1,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 2,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 3,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 4,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 5,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 6,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 7,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 8,
+        "value": 11
+      },
+      {
+        "female_nakshatra_id": 9,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 10,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 11,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 12,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 13,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 14,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 15,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 16,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 17,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 18,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 19,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 20,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 21,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 22,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 23,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 24,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 25,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 26,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 27,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 28,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 29,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 30,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 31,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 32,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 33,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 34,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 35,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 36,
+        "value": 0
+      }
+    ]
+  },
+  {
+    "male_nakshatra_id": 9,
+    "matching": [
+      {
+        "female_nakshatra_id": 1,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 2,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 3,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 4,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 5,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 6,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 7,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 8,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 9,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 10,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 11,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 12,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 13,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 14,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 15,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 16,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 17,
+        "value": 10
+      },
+      {
+        "female_nakshatra_id": 18,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 19,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 20,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 21,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 22,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 23,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 24,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 25,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 26,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 27,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 28,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 29,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 30,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 31,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 32,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 33,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 34,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 35,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 36,
+        "value": 6
+      }
+    ]
+  },
+  {
+    "male_nakshatra_id": 10,
+    "matching": [
+      {
+        "female_nakshatra_id": 1,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 2,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 3,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 4,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 5,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 6,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 7,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 8,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 9,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 10,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 11,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 12,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 13,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 14,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 15,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 16,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 17,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 18,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 19,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 20,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 21,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 22,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 23,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 24,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 25,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 26,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 27,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 28,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 29,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 30,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 31,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 32,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 33,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 34,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 35,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 36,
+        "value": 7
+      }
+    ]
+  },
+  {
+    "male_nakshatra_id": 11,
+    "matching": [
+      {
+        "female_nakshatra_id": 1,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 2,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 3,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 4,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 5,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 6,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 7,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 8,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 9,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 10,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 11,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 12,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 13,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 14,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 15,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 16,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 17,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 18,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 19,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 20,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 21,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 22,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 23,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 24,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 25,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 26,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 27,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 28,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 29,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 30,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 31,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 32,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 33,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 34,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 35,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 36,
+        "value": 7
+      }
+    ]
+  },
+  {
+    "male_nakshatra_id": 12,
+    "matching": [
+      {
+        "female_nakshatra_id": 1,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 2,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 3,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 4,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 5,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 6,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 7,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 8,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 9,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 10,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 11,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 12,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 13,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 14,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 15,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 16,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 17,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 18,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 19,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 20,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 21,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 22,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 23,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 24,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 25,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 26,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 27,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 28,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 29,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 30,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 31,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 32,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 33,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 34,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 35,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 36,
+        "value": 0
+      }
+    ]
+  },
+  {
+    "male_nakshatra_id": 13,
+    "matching": [
+      {
+        "female_nakshatra_id": 1,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 2,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 3,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 4,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 5,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 6,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 7,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 8,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 9,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 10,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 11,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 12,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 13,
+        "value": 11
+      },
+      {
+        "female_nakshatra_id": 14,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 15,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 16,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 17,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 18,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 19,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 20,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 21,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 22,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 23,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 24,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 25,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 26,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 27,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 28,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 29,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 30,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 31,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 32,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 33,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 34,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 35,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 36,
+        "value": 0
+      }
+    ]
+  },
+  {
+    "male_nakshatra_id": 14,
+    "matching": [
+      {
+        "female_nakshatra_id": 1,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 2,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 3,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 4,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 5,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 6,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 7,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 8,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 9,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 10,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 11,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 12,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 13,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 14,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 15,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 16,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 17,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 18,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 19,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 20,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 21,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 22,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 23,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 24,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 25,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 26,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 27,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 28,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 29,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 30,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 31,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 32,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 33,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 34,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 35,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 36,
+        "value": 6
+      }
+    ]
+  },
+  {
+    "male_nakshatra_id": 15,
+    "matching": [
+      {
+        "female_nakshatra_id": 1,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 2,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 3,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 4,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 5,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 6,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 7,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 8,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 9,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 10,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 11,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 12,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 13,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 14,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 15,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 16,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 17,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 18,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 19,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 20,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 21,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 22,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 23,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 24,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 25,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 26,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 27,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 28,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 29,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 30,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 31,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 32,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 33,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 34,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 35,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 36,
+        "value": 8
+      }
+    ]
+  },
+  {
+    "male_nakshatra_id": 16,
+    "matching": [
+      {
+        "female_nakshatra_id": 1,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 2,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 3,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 4,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 5,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 6,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 7,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 8,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 9,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 10,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 11,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 12,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 13,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 14,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 15,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 16,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 17,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 18,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 19,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 20,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 21,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 22,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 23,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 24,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 25,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 26,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 27,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 28,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 29,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 30,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 31,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 32,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 33,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 34,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 35,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 36,
+        "value": 8
+      }
+    ]
+  },
+  {
+    "male_nakshatra_id": 17,
+    "matching": [
+      {
+        "female_nakshatra_id": 1,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 2,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 3,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 4,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 5,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 6,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 7,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 8,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 9,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 10,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 11,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 12,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 13,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 14,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 15,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 16,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 17,
+        "value": 11
+      },
+      {
+        "female_nakshatra_id": 18,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 19,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 20,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 21,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 22,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 23,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 24,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 25,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 26,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 27,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 28,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 29,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 30,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 31,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 32,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 33,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 34,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 35,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 36,
+        "value": 6
+      }
+    ]
+  },
+  {
+    "male_nakshatra_id": 18,
+    "matching": [
+      {
+        "female_nakshatra_id": 1,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 2,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 3,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 4,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 5,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 6,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 7,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 8,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 9,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 10,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 11,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 12,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 13,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 14,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 15,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 16,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 17,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 18,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 19,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 20,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 21,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 22,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 23,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 24,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 25,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 26,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 27,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 28,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 29,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 30,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 31,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 32,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 33,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 34,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 35,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 36,
+        "value": 0
+      }
+    ]
+  },
+  {
+    "male_nakshatra_id": 19,
+    "matching": [
+      {
+        "female_nakshatra_id": 1,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 2,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 3,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 4,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 5,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 6,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 7,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 8,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 9,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 10,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 11,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 12,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 13,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 14,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 15,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 16,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 17,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 18,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 19,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 20,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 21,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 22,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 23,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 24,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 25,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 26,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 27,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 28,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 29,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 30,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 31,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 32,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 33,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 34,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 35,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 36,
+        "value": 0
+      }
+    ]
+  },
+  {
+    "male_nakshatra_id": 20,
+    "matching": [
+      {
+        "female_nakshatra_id": 1,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 2,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 3,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 4,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 5,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 6,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 7,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 8,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 9,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 10,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 11,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 12,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 13,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 14,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 15,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 16,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 17,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 18,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 19,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 20,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 21,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 22,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 23,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 24,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 25,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 26,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 27,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 28,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 29,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 30,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 31,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 32,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 33,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 34,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 35,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 36,
+        "value": 6
+      }
+    ]
+  },
+  {
+    "male_nakshatra_id": 21,
+    "matching": [
+      {
+        "female_nakshatra_id": 1,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 2,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 3,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 4,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 5,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 6,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 7,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 8,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 9,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 10,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 11,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 12,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 13,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 14,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 15,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 16,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 17,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 18,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 19,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 20,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 21,
+        "value": 11
+      },
+      {
+        "female_nakshatra_id": 22,
+        "value": 11
+      },
+      {
+        "female_nakshatra_id": 23,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 24,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 25,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 26,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 27,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 28,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 29,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 30,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 31,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 32,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 33,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 34,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 35,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 36,
+        "value": 0
+      }
+    ]
+  },
+  {
+    "male_nakshatra_id": 22,
+    "matching": [
+      {
+        "female_nakshatra_id": 1,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 2,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 3,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 4,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 5,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 6,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 7,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 8,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 9,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 10,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 11,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 12,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 13,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 14,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 15,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 16,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 17,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 18,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 19,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 20,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 21,
+        "value": 11
+      },
+      {
+        "female_nakshatra_id": 22,
+        "value": 11
+      },
+      {
+        "female_nakshatra_id": 23,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 24,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 25,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 26,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 27,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 28,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 29,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 30,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 31,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 32,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 33,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 34,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 35,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 36,
+        "value": 0
+      }
+    ]
+  },
+  {
+    "male_nakshatra_id": 23,
+    "matching": [
+      {
+        "female_nakshatra_id": 1,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 2,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 3,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 4,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 5,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 6,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 7,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 8,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 9,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 10,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 11,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 12,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 13,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 14,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 15,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 16,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 17,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 18,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 19,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 20,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 21,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 22,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 23,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 24,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 25,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 26,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 27,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 28,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 29,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 30,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 31,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 32,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 33,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 34,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 35,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 36,
+        "value": 8
+      }
+    ]
+  },
+  {
+    "male_nakshatra_id": 24,
+    "matching": [
+      {
+        "female_nakshatra_id": 1,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 2,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 3,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 4,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 5,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 6,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 7,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 8,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 9,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 10,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 11,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 12,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 13,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 14,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 15,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 16,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 17,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 18,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 19,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 20,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 21,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 22,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 23,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 24,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 25,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 26,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 27,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 28,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 29,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 30,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 31,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 32,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 33,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 34,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 35,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 36,
+        "value": 0
+      }
+    ]
+  },
+  {
+    "male_nakshatra_id": 25,
+    "matching": [
+      {
+        "female_nakshatra_id": 1,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 2,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 3,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 4,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 5,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 6,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 7,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 8,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 9,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 10,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 11,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 12,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 13,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 14,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 15,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 16,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 17,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 18,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 19,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 20,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 21,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 22,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 23,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 24,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 25,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 26,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 27,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 28,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 29,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 30,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 31,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 32,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 33,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 34,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 35,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 36,
+        "value": 0
+      }
+    ]
+  },
+  {
+    "male_nakshatra_id": 26,
+    "matching": [
+      {
+        "female_nakshatra_id": 1,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 2,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 3,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 4,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 5,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 6,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 7,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 8,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 9,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 10,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 11,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 12,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 13,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 14,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 15,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 16,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 17,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 18,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 19,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 20,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 21,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 22,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 23,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 24,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 25,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 26,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 27,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 28,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 29,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 30,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 31,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 32,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 33,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 34,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 35,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 36,
+        "value": 7
+      }
+    ]
+  },
+  {
+    "male_nakshatra_id": 27,
+    "matching": [
+      {
+        "female_nakshatra_id": 1,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 2,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 3,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 4,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 5,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 6,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 7,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 8,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 9,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 10,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 11,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 12,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 13,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 14,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 15,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 16,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 17,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 18,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 19,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 20,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 21,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 22,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 23,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 24,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 25,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 26,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 27,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 28,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 29,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 30,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 31,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 32,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 33,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 34,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 35,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 36,
+        "value": 9
+      }
+    ]
+  },
+  {
+    "male_nakshatra_id": 28,
+    "matching": [
+      {
+        "female_nakshatra_id": 1,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 2,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 3,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 4,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 5,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 6,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 7,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 8,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 9,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 10,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 11,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 12,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 13,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 14,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 15,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 16,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 17,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 18,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 19,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 20,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 21,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 22,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 23,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 24,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 25,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 26,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 27,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 28,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 29,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 30,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 31,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 32,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 33,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 34,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 35,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 36,
+        "value": 10
+      }
+    ]
+  },
+  {
+    "male_nakshatra_id": 29,
+    "matching": [
+      {
+        "female_nakshatra_id": 1,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 2,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 3,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 4,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 5,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 6,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 7,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 8,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 9,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 10,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 11,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 12,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 13,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 14,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 15,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 16,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 17,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 18,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 19,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 20,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 21,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 22,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 23,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 24,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 25,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 26,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 27,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 28,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 29,
+        "value": 11
+      },
+      {
+        "female_nakshatra_id": 30,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 31,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 32,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 33,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 34,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 35,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 36,
+        "value": 8
+      }
+    ]
+  },
+  {
+    "male_nakshatra_id": 30,
+    "matching": [
+      {
+        "female_nakshatra_id": 1,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 2,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 3,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 4,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 5,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 6,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 7,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 8,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 9,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 10,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 11,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 12,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 13,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 14,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 15,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 16,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 17,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 18,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 19,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 20,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 21,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 22,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 23,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 24,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 25,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 26,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 27,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 28,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 29,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 30,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 31,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 32,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 33,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 34,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 35,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 36,
+        "value": 0
+      }
+    ]
+  },
+  {
+    "male_nakshatra_id": 31,
+    "matching": [
+      {
+        "female_nakshatra_id": 1,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 2,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 3,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 4,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 5,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 6,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 7,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 8,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 9,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 10,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 11,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 12,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 13,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 14,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 15,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 16,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 17,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 18,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 19,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 20,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 21,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 22,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 23,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 24,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 25,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 26,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 27,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 28,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 29,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 30,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 31,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 32,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 33,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 34,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 35,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 36,
+        "value": 0
+      }
+    ]
+  },
+  {
+    "male_nakshatra_id": 32,
+    "matching": [
+      {
+        "female_nakshatra_id": 1,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 2,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 3,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 4,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 5,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 6,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 7,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 8,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 9,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 10,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 11,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 12,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 13,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 14,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 15,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 16,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 17,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 18,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 19,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 20,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 21,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 22,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 23,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 24,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 25,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 26,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 27,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 28,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 29,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 30,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 31,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 32,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 33,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 34,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 35,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 36,
+        "value": 8
+      }
+    ]
+  },
+  {
+    "male_nakshatra_id": 33,
+    "matching": [
+      {
+        "female_nakshatra_id": 1,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 2,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 3,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 4,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 5,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 6,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 7,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 8,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 9,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 10,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 11,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 12,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 13,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 14,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 15,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 16,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 17,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 18,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 19,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 20,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 21,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 22,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 23,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 24,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 25,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 26,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 27,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 28,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 29,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 30,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 31,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 32,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 33,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 34,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 35,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 36,
+        "value": 0
+      }
+    ]
+  },
+  {
+    "male_nakshatra_id": 34,
+    "matching": [
+      {
+        "female_nakshatra_id": 1,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 2,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 3,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 4,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 5,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 6,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 7,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 8,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 9,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 10,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 11,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 12,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 13,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 14,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 15,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 16,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 17,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 18,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 19,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 20,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 21,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 22,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 23,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 24,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 25,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 26,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 27,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 28,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 29,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 30,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 31,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 32,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 33,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 34,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 35,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 36,
+        "value": 0
+      }
+    ]
+  },
+  {
+    "male_nakshatra_id": 35,
+    "matching": [
+      {
+        "female_nakshatra_id": 1,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 2,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 3,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 4,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 5,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 6,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 7,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 8,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 9,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 10,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 11,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 12,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 13,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 14,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 15,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 16,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 17,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 18,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 19,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 20,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 21,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 22,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 23,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 24,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 25,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 26,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 27,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 28,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 29,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 30,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 31,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 32,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 33,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 34,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 35,
+        "value": 11
+      },
+      {
+        "female_nakshatra_id": 36,
+        "value": 8
+      }
+    ]
+  },
+  {
+    "male_nakshatra_id": 36,
+    "matching": [
+      {
+        "female_nakshatra_id": 1,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 2,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 3,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 4,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 5,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 6,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 7,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 8,
+        "value": 9
+      },
+      {
+        "female_nakshatra_id": 9,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 10,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 11,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 12,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 13,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 14,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 15,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 16,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 17,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 18,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 19,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 20,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 21,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 22,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 23,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 24,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 25,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 26,
+        "value": 8
+      },
+      {
+        "female_nakshatra_id": 27,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 28,
+        "value": 6
+      },
+      {
+        "female_nakshatra_id": 29,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 30,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 31,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 32,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 33,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 34,
+        "value": 0
+      },
+      {
+        "female_nakshatra_id": 35,
+        "value": 7
+      },
+      {
+        "female_nakshatra_id": 36,
+        "value": 11
+      }
+    ]
+  }
+]
