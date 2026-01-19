@@ -43,7 +43,7 @@ const DEFAULT_CONFIG = {
     structuredLogging: true
   },
   lastUpdated: new Date().toISOString(),
-  version: '1.0.7'
+  version: '2.0.0'
 };
 
 /**
