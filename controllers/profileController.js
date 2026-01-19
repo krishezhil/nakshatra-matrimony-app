@@ -907,7 +907,7 @@ exports.createProfile = asyncHandler(async (req, res) => {
     });
     
     const data = {
-      id: newId,
+      id: String(newId),
       serial_no: req.body.serial_no.trim(),
       name: req.body.name.trim(),
       father_name: req.body.father_name || '',

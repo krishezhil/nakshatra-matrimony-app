@@ -138,13 +138,13 @@
                                     placeholder="Enter your age">
                             </div>
                         </div>
-                        <div class="row g-3 mt-2" id="nakshatraRasiRow" style="display: none;">
+                        <div class="row g-3 mt-2" id="nakshatraRasiRow">
                             <div class="col-md-6">
                                 <label class="form-label">Your Rasi/Lagnam</label>
                                 <select class="form-select" name="seekerRasi" id="seeker-rasi" 
                                         readonly onclick="return false;" onkeydown="return false;"
                                         style="background-color: #f8f9fa; color: #6c757d; cursor: not-allowed;"
-                                        title="This field is currently disabled by admin - fixed to 'Suth' for all searches"
+                                        title="Default Rasi/Lagnam is Suth"
                                         data-bs-toggle="tooltip" data-bs-placement="top">
                                     <option value="">Select Your Rasi Lagnam</option>
                                     <option value="Suth" <%= !form || !form.seekerRasi || form.seekerRasi === 'Suth' ? 'selected' : '' %>>Suth</option>
@@ -363,7 +363,7 @@
                                         <i class="fas fa-redo me-2"></i>Include Remarried
                                     </label>
                                 </div>
-                                <div class="form-check" style="display: none;">
+                                <div class="form-check">
                                     <input class="form-check-input" type="checkbox"
                                         name="enableRasiCompatibility" id="enableRasiCompatibility"
                                         value="true" <%=(typeof form==='undefined' || typeof form.enableRasiCompatibility==='undefined') ? 'checked' :

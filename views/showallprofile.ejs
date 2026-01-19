@@ -558,11 +558,19 @@
                                 <option value="Female" <%= typeof query !== 'undefined' && query.gender === 'Female' ? 'selected' : '' %>>Female</option>
                             </select>
                         </div>
+                        <div class="col-md-1">
+                            <label class="form-label">Status</label>
+                            <select class="form-select" name="is_active">
+                                <option value="">All</option>
+                                <option value="true" <%= typeof query !== 'undefined' && query.is_active === 'true' ? 'selected' : '' %>>Active</option>
+                                <option value="false" <%= typeof query !== 'undefined' && query.is_active === 'false' ? 'selected' : '' %>>Inactive</option>
+                            </select>
+                        </div>
                         <div class="col-md-2">
                             <label class="form-label">Birth Date</label>
                             <input type="date" class="form-control" name="birth_date" value="<%= typeof query !== 'undefined' && query.birth_date ? query.birth_date : '' %>">
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-2">
                             <label class="form-label">Contact No</label>
                             <input type="text" class="form-control" name="contact_no" placeholder="Enter Contact No" value="<%= typeof query !== 'undefined' && query.contact_no ? query.contact_no : '' %>">
                         </div>

@@ -35,10 +35,10 @@ router.get('/filter', asyncHandler(async (req, res) => {
 	});
 	
 	try {
-		const { serial_no, name, gender, birth_date, contact_no } = req.query;
+		const { serial_no, name, gender, birth_date, contact_no, is_active } = req.query;
 		
 		// Validate search criteria
-		const hasValidCriteria = serial_no || name || gender || birth_date || contact_no;
+		const hasValidCriteria = serial_no || name || gender || birth_date || contact_no || is_active;
 		if (!hasValidCriteria) {
 			searchLogger.warn('[WARN] No search criteria provided', {
 				phase: 'PARAMETER_VALIDATION',
@@ -55,7 +55,8 @@ router.get('/filter', asyncHandler(async (req, res) => {
 				name,
 				gender,
 				birth_date,
-				contact_no
+				contact_no,
+				is_active
 			}),
 			source: 'ProfileApiRoutes'
 		});
@@ -231,6 +232,37 @@ router.get('/filter', asyncHandler(async (req, res) => {
 					phase: 'FILTERING',
 					filter: 'contact_no',
 					value: contact_no,
+					errorMessage: filterError.message,
+					source: 'ProfileApiRoutes'
+				}, filterError);
+			}
+		}
+		
+		// Filter by active status
+		if (is_active && is_active.trim() !== '') {
+			const beforeCount = filtered.length;
+			try {
+				const isActiveValue = is_active === 'true';
+				filtered = filtered.filter(p => {
+					// Handle various storage formats: boolean, string 'true'/'false', or undefined (default to active)
+					const profileIsActive = p.is_active === true || p.is_active === 'true' || p.is_active === undefined;
+					return isActiveValue ? profileIsActive : !profileIsActive;
+				});
+				
+				searchLogger.trace('[TRACE] Applied is_active filter', {
+					phase: 'FILTERING',
+					filter: 'is_active',
+					value: is_active,
+					beforeCount,
+					afterCount: filtered.length,
+					filteredOut: beforeCount - filtered.length,
+					source: 'ProfileApiRoutes'
+				});
+			} catch (filterError) {
+				searchLogger.error('[ERROR] is_active filter failed', {
+					phase: 'FILTERING',
+					filter: 'is_active',
+					value: is_active,
 					errorMessage: filterError.message,
 					source: 'ProfileApiRoutes'
 				}, filterError);
