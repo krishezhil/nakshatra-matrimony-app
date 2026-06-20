@@ -269,15 +269,15 @@
 			<div class="col-md-6">
 				<label class="form-label">Is Active</label>
 				<select class="form-select" name="is_active">
-					<option value="true" <%= profile.is_active ? 'selected' : '' %>>Yes</option>
-					<option value="false" <%= !profile.is_active ? 'selected' : '' %>>No</option>
+					<option value="true" <%= profile.is_active === 'true' || profile.is_active === true ? 'selected' : '' %>>Yes</option>
+					<option value="false" <%= profile.is_active === 'false' || profile.is_active === false ? 'selected' : '' %>>No</option>
 				</select>
 			</div>
 			<div class="col-md-6">
 				<label class="form-label">Is Remarried</label>
 				<select class="form-select" name="is_remarried">
-					<option value="true" <%= profile.is_remarried === 'true' ? 'selected' : '' %>>Yes</option>
-					<option value="false" <%= profile.is_remarried === 'false' ? 'selected' : '' %>>No</option>
+					<option value="true" <%= profile.is_remarried === 'true' || profile.is_remarried === true ? 'selected' : '' %>>Yes</option>
+					<option value="false" <%= profile.is_remarried === 'false' || profile.is_remarried === false ? 'selected' : '' %>>No</option>
 				</select>
 			</div>
 				<div class="col-md-6">

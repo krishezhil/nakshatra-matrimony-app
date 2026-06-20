@@ -84,11 +84,31 @@ function validateAndFindProfileBySerial(serialNo, searchMode, logger) {
   );
   
   if (profile) {
+    // Validate that the profile is active
+    if (profile.is_active !== true && profile.is_active !== 'true') {
+      const inactiveMsg = 'The profile with this Serial No. is inactive and cannot be used for matching.';
+      logger.warn('[WARN] Profile found but is inactive', {
+        phase: 'PROFILE_LOOKUP',
+        serialNo,
+        profileId: profile.id,
+        profileName: profile.name,
+        isActive: profile.is_active
+      });
+      
+      throw new AppError(
+        inactiveMsg,
+        400,
+        ERROR_TYPES.VALIDATION,
+        { serialNo, profileId: profile.id, isActive: profile.is_active }
+      );
+    }
+    
     logger.trace('[TRACE] Found profile by serial number', {
       phase: 'PROFILE_LOOKUP',
       serialNo,
       profileId: profile.id,
-      profileName: profile.name
+      profileName: profile.name,
+      isActive: profile.is_active
     });
     return { profileId: profile.id, profile };
   }

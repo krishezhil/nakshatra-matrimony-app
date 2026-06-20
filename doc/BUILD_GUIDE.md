@@ -103,7 +103,7 @@ cd build
 .\create-client-package.ps1 -AppName "CustomAppName"
 
 # Both
-.\create-client-package.ps1 -AppName "MyApp" -Version "2.0.0"
+.\create-client-package.ps1 -AppName "MyApp" -Version "4.0.0"
 ```
 
 **Output:**

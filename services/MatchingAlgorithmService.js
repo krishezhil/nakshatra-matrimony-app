@@ -65,6 +65,7 @@ function findMatchingMales(femaleNakshatraId, includeMathimam, seekerRasi = null
     .filter(
       (p) =>
         p.gender === "Male" &&
+        (p.is_active === true || p.is_active === 'true' || p.is_active === undefined) &&
         poruthamMap[parseInt(p.nakshatraid, 10)] !== undefined
     )
     .map(p => {
@@ -170,6 +171,7 @@ function findMatchingFemales(maleNakshatraId, includeMathimam, seekerRasi = null
     .filter(
       (p) =>
         p.gender === "Female" &&
+        (p.is_active === true || p.is_active === 'true' || p.is_active === undefined) &&
         poruthamMap[parseInt(p.nakshatraid, 10)] !== undefined
     )
     .map(p => {
