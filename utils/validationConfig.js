@@ -50,7 +50,7 @@ const VALIDATION_CONFIG = {
 
   // Validation patterns
   PATTERNS: {
-    phone: /^[6-9]\d{9}$/,
+    phone: /^(\+\d{1,3}[- ]?)?\d{7,15}$/,
     serial: /^[A-Za-z0-9\-_]+$/,
     name: /^[a-zA-Z\s\.\(\)\-\']+$/,
     time: /^([01]?[0-9]|2[0-3]):[0-5][0-9]$/

@@ -125,9 +125,9 @@ export class WhatsAppManager {
         // Validate phone number format
         if (!this.validatePhoneNumber(phoneNumber)) {
             if (typeof ErrorHandler !== 'undefined') {
-                ErrorHandler.showError('Please enter a valid phone number (10 digits with optional country code)', ErrorHandler.errorTypes.VALIDATION);
+                ErrorHandler.showError('Please enter a valid phone number (Indian: 10 digits or International: +country code + 7-15 digits)', ErrorHandler.errorTypes.VALIDATION);
             } else {
-                alert('Please enter a valid phone number (10 digits with optional country code)');
+                alert('Please enter a valid phone number (Indian: 10 digits or International: +country code + 7-15 digits)');
             }
             document.getElementById('phoneNumber').focus();
             return;
@@ -191,7 +191,7 @@ export class WhatsAppManager {
      * @returns {boolean} - Validation result
      */
     validatePhoneNumber(phoneNumber) {
-        const phoneRegex = /^(\+\d{1,3}[- ]?)?\d{10}$/;
+        const phoneRegex = /^(\+\d{1,3}[- ]?)?\d{7,15}$/;
         return phoneRegex.test(phoneNumber.replace(/\s+/g, ''));
     }
 

@@ -275,15 +275,16 @@ class FieldValidator {
       return errors;
     }
     
-    // Clean phone number (remove non-digits)
-    const cleanPhone = value.replace(/\D/g, '');
+    // Normalize phone number (remove spaces and dashes, but keep the + for international)
+    // This preserves the + symbol needed for international format validation
+    const normalizedPhone = value.replace(/[\s\-]/g, '');
     
-    // Pattern validation
+    // Pattern validation - supports both Indian and International formats
     errors.push(...this.validatePattern(
-      cleanPhone,
+      normalizedPhone,
       fieldName,
       VALIDATION_CONFIG.PATTERNS.phone,
-      'format: 10 digits starting with 6-9'
+      'Indian (10 digits starting with 6-9) or International (+1-3 digit country code + 7-15 digits)'
     ));
     
     return errors;

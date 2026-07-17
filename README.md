@@ -17,7 +17,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-2.0.0-blue.svg" alt="Version">
+  <img src="https://img.shields.io/badge/version-4.0.0-blue.svg" alt="Version">
   <img src="https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen.svg" alt="Node Version">
   <img src="https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg" alt="Platform">
   <img src="https://img.shields.io/badge/license-ISC-green.svg" alt="License">
@@ -120,6 +120,93 @@ npm run build:all
 The executable will be created in the `dist/` folder.
 
 ---
+
+## Build & Packaging Process
+
+The application build and packaging process consists of two steps:
+
+### Step 1: Build the Executable
+
+**Script:** `build/build-pkg.ps1`
+
+**Purpose:** Generates the Windows executable for the application.
+
+#### Actions Performed
+
+1. Validates the build environment by checking required files (`package.json`, `index.js`).
+2. Stops any running Node.js or Chrome processes.
+3. Updates application version references.
+4. Builds the Windows executable using PKG.
+
+#### Command
+
+```powershell
+cd build
+.\build-pkg.ps1
+```
+
+#### Output
+
+```text
+dist/nakshatra-matrimony-win64.exe
+```
+
+---
+
+### Step 2: Create the Client Package
+
+**Script:** `build/create-client-package.ps1`
+
+**Purpose:** Creates a client-ready distribution package containing the executable, documentation, and support information.
+
+#### Actions Performed
+
+1. Reads the application version from `package.json`.
+2. Creates the package folder structure.
+3. Copies the executable and renames it using the application version.
+4. Copies the User Manual PDF.
+5. Creates a support information file.
+6. Generates a ZIP archive for distribution.
+
+#### Command
+
+```powershell
+cd build
+.\create-client-package.ps1
+```
+
+#### Output Structure
+
+```text
+dist/
+├── NakshatraMatrimony_v{VERSION}_ClientPackage/
+│   ├── NakshatraMatrimony-v{VERSION}.exe
+│   ├── USER_MANUAL_Professional.pdf
+│   └── SUPPORT_INFO.txt
+└── NakshatraMatrimony_v{VERSION}_ClientPackage.zip
+```
+
+---
+
+### Quick Reference
+
+| Task                                          | Command                                        |
+| --------------------------------------------- | ---------------------------------------------- |
+| Build executable only                         | `cd build && .\build-pkg.ps1`                  |
+| Create client package                         | `cd build && .\create-client-package.ps1`      |
+| Create package for a specific version         | `.\create-client-package.ps1 -Version "1.0.8"` |
+| Create package with a custom application name | `.\create-client-package.ps1 -AppName "MyApp"` |
+
+### Deliverables
+
+Upon successful completion of both steps, the following artifacts will be available:
+
+* Application executable (`.exe`)
+* Client package folder
+* User Manual (PDF)
+* Support information file
+* Distribution ZIP package
+
 
 ## Screenshots
 
@@ -244,6 +331,108 @@ CONSOLE_LOGGING=true
 ```
 
 > **Note**: Rate limiting is **disabled by default** for desktop app performance. The infrastructure exists if needed for server deployments.
+
+---
+
+## Version Management for Developers
+
+### Version Information Files
+
+The application uses a **single source of truth** for version management. Version is maintained in the following files:
+
+| File | Purpose | Notes |
+|------|---------|-------|
+| **package.json** | Primary version source | Updated manually for each release |
+| **utils/config.js** | Configuration version | Auto-synced via update script |
+| **.env** | Environment variable | Auto-synced via update script |
+| **package-lock.json** | Lock file reference | Auto-synced via update script |
+
+### How to Increment Version
+
+The application uses **Semantic Versioning** (MAJOR.MINOR.PATCH format):
+
+#### Step 1: Update package.json
+
+Edit `package.json` and change the `version` field:
+
+```json
+{
+  "name": "nakshatra-matrimony-app",
+  "version": "4.0.1"  // Update this
+}
+```
+
+#### Step 2: Update Configuration Files
+
+Run the automatic version update script:
+
+```bash
+# This synchronizes version across all files
+node utils/update-version.js
+```
+
+**What gets updated automatically:**
+- ✅ `utils/config.js` - Sets `version: '4.0.1'`
+- ✅ `.env` - Sets `APP_VERSION=4.0.1`
+- ✅ `package-lock.json` - Updates version references
+- ✅ Console logs version update confirmation
+
+#### Step 3: Verify Changes
+
+```bash
+# Check if version is consistent
+grep -r "4.0.1" package.json utils/config.js .env
+
+# Start the app to verify
+npm start
+```
+
+Look for the version in application logs:
+
+```
+✅ Updated: package.json
+✅ Updated: utils/config.js  
+✅ Updated: .env
+```
+
+### Version Numbering Guidelines
+
+| Scenario | Version Change | Example |
+|----------|---|---------|
+| Bug fixes, minor improvements | PATCH | 4.0.0 → 4.0.1 |
+| New features, non-breaking changes | MINOR | 4.0.0 → 4.1.0 |
+| Major refactoring, breaking changes | MAJOR | 4.0.0 → 5.0.0 |
+
+### Version in Application
+
+Once updated, the version appears in:
+
+1. **Console Output**: `📝 Version: 4.0.1`
+2. **Executable Name**: `NakshatraMatrimony-v4.0.1.exe`
+3. **Build Logs**: Displayed during build process
+4. **API Responses**: Available via version middleware
+
+### Example: Complete Version Update Workflow
+
+```bash
+# 1. Edit package.json
+# Change "version": "4.0.0" to "version": "4.0.1"
+
+# 2. Run update script
+node utils/update-version.js
+
+# 3. Verify all files are updated
+grep version package.json          # "version": "4.0.1"
+grep version utils/config.js       # version: '4.0.1'
+grep APP_VERSION .env              # APP_VERSION=4.0.1
+
+# 4. Commit changes
+git add package.json utils/config.js .env
+git commit -m "chore: bump version to 4.0.1"
+
+# 5. Build executable with new version
+npm run build:exe
+```
 
 ---
 

@@ -1,6 +1,6 @@
 {
   "name": "nakshatra-matrimony-app",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "description": "Hindu Matrimony Desktop Application with Nakshatra-based compatibility matching system",
   "main": "index.js",
   "author": {
